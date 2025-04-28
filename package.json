@@ -1,0 +1,16 @@
+{
+  "name": "okarowok_wibye",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/scss/main.scss assets/css/main.css --watch --style compressed --source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}
