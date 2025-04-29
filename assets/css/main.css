@@ -5967,6 +5967,11 @@ a.header__search.header-search-btn p {
   padding-top: 10px;
 }
 
+.about9.sp p {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 .about10 .heading10 {
   padding-left: 30px;
 }
@@ -6431,7 +6436,7 @@ a.header__search.header-search-btn p {
   background-repeat: no-repeat;
 }
 .about9 .cs_case_study_thumb.cs_case_study_thumb2 {
-  background-image: url(../img/about/culture.jpeg);
+  background-image: url(../img/about/culture.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23861,6 +23866,8 @@ li.has-dropdown1 span {
 .corevalues {
   list-style: circle !important;
   padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: var(--ztc-text-pera-text-1);
 }
 
