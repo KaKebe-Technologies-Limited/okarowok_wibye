@@ -102,8 +102,9 @@
         <div class="col-12">
           <div class="header-elements">
             <div class="site-logo">
-              <a href="index.html" class="clan-name-logo text-center">
-                Okarowok Wibye Acel Clan
+              <a href="#" class="d-flex clan-name-logo text-center">
+                <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image">
+                <span class="logo-text">Okarowok Wibye Acel Clan</span>
               </a>
             </div>
 
@@ -187,11 +188,11 @@
                     </div>
                     <div class="headding">
                       <p>Make a Call</p>
-                      <a href="tel:124(555)6565">124 (555) 6565</a>
+                      <a href="tel:+256764820075">+256 764 820075</a>
                     </div>
                   </div>
                   <div class="button">
-                    <a class="theme-btn1" href="index.html#contact">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a class="theme-btn1" href="index.html#contact">Get in Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
             </div>
 
@@ -209,8 +210,9 @@
       <div class="col-12">
         <div class="mobile-header-elements">
           <div class="mobile-logo">
-            <a href="index.html" class="clan-name-logo-mobile">
-              Okarowok Wibye Acel
+            <a href="#" class="clan-name-logo-mobile">
+              <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-mobile">
+              <span class="logo-text">Okarowok Wibye Acel</span>
             </a>
           </div>
           <div class="mobile-nav-icon">
@@ -345,37 +347,60 @@
         <div class="category-header">
           <h3><i class="fa-solid fa-circle-check"></i> Events Completed</h3>
         </div>
-        <div class="activity-list">
-          <div class="activity-item">
-            <div class="activity-date">December 2024</div>
-            <div class="activity-details">
-              <h4>Women's Conference</h4>
-              <p>Okarowok Wibye Acel Women's Conference at Akalo Secondary School</p>
+        <div class="row activity-cards">
+          <!-- Women's Conference Card -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="event-card">
+              <div class="event-img-container">
+                <img src="assets/img/service/conference.jpg" alt="Women's Conference at Akalo Secondary School" class="event-img">
+                <div class="event-date">December 2024</div>
+              </div>
+              <div class="event-body">
+                <h4 class="event-title">Women's Conference</h4>
+                <p class="event-desc">Okarowok Wibye Acel Women's Conference at Akalo Secondary School</p>
+                <a href="#" class="event-link">View Photos <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-          <div class="activity-item">
-            <div class="activity-date">June 2024 - March 2025</div>
-            <div class="activity-details">
-              <h4>Youth Rallies</h4>
-              <p>Election and installation of youth leadership across all 25 chiefdoms using the 16-member Executive Model</p>
+
+          <!-- Youth Rallies Card -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="event-card">
+              <div class="event-img-container">
+                <img src="assets/img/service/rally.jpg" alt="Youth leadership elections" class="event-img">
+                <div class="event-date">June 2024 - March 2025</div>
+              </div>
+              <div class="event-body">
+                <h4 class="event-title">Youth Rallies</h4>
+                <p class="event-desc">Election and installation of youth leadership across all 25 chiefdoms using the 16-member Executive Model</p>
+                <a href="#" class="event-link">See Results <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-          <div class="activity-item">
-            <div class="activity-date">Ongoing</div>
-            <div class="activity-details">
-              <h4>Cultural Centre Fundraising</h4>
-              <p>Mobilizing clan members to raise funds for the Okarowok Wibye Acel Cultural Centre in Akalo, Bardok Oculi</p>
+
+          <!-- Fundraising Card -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="event-card">
+              <div class="event-img-container">
+                <img src="assets/img/service/institution.jpg" alt="Cultural Centre construction site" class="event-img">
+                <div class="event-date">Ongoing</div>
+              </div>
+              <div class="event-body">
+                <h4 class="event-title">Cultural Centre Fundraising</h4>
+                <p class="event-desc">Mobilizing clan members to raise funds for the Okarowok Wibye Acel Cultural Centre in Akalo, Bardok Oculi</p>
+                <a href="#" class="event-link">Donate Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      
       <!-- Ongoing Activities -->
       <div class="activity-category" data-aos="fade-up" data-aos-delay="100">
-        <div class="category-header">
-          <h3><i class="fa-solid fa-spinner"></i> On-going Activities</h3>
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3><i class="fa-solid fa-spinner"></i> On-going Activities <i class="fa-solid fa-chevron-down accordion-icon"></i></h3>
         </div>
-        <div class="activity-list">
+        <div class="activity-list accordion-content">
           <div class="activity-item">
             <div class="activity-icon">
               <i class="fa-solid fa-hands-holding-heart"></i>
@@ -417,10 +442,10 @@
 
       <!-- Forthcoming Events -->
       <div class="activity-category" data-aos="fade-up" data-aos-delay="200">
-        <div class="category-header">
-          <h3><i class="fa-solid fa-calendar-days"></i> Forthcoming Events</h3>
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3><i class="fa-solid fa-calendar-days"></i> Forthcoming Events <i class="fa-solid fa-chevron-down accordion-icon"></i></h3>
         </div>
-        <div class="activity-list">
+        <div class="activity-list accordion-content">
           <div class="activity-item">
             <div class="activity-date">October 2025</div>
             <div class="activity-details">
@@ -448,153 +473,119 @@
   </div>
   <!--=====CLAN ACTIVITIES END=======-->
 
-        
-  <!--=====CTA AREA START=======-->
-<!-- 
-  <div class="cta">
+  <!--===== FOOTER AREA START =======-->
+
+  <div class="footer1 _relative">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="heading1-w">
-            <h2>At TechXen IT Solutions, We're Committed To Businesses</h2>
-            <div class="space16"></div>
-            <p>Take the first step towards achieving your business goals by contacting us today. Schedule a consultation with one of our IT specialists to discuss your objectives and explore how our innovative solutions can propel.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="buttons">
-            <a class="cta-btn1" href="service.html">Request a Consultaion <span><i class="fa-solid fa-arrow-right"></i></span></a>
-            <a class="cta-btn2" href="service.html">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!--=====CTA AREA END=======-->
-
-            <!--===== FOOTER AREA START =======-->
-
-                <div class="footer1 _relative">
-                  <div class="container">
-                       <div class="row">
-                            <div class="col-lg-5 col-md-6 col-12">
-                                 <div class="single-footer-items footer-logo-area">
-                                      <div class="footer-logo">
-                                        <a href="index.html" class="clan-name-logo-footer">
-                                          Okarowok Wibye Acel
-                                        </a>
-                                      </div>
-                                      <div class="space20"></div>
-                                      <div class="heading1">
-                                        <p>At TechXen IT Solutions, we're dedicated to delivering innovative technology solutions tailored to meet the unique needs of businesses like yours. </p>
-                                      </div>
-                                      <ul class="social-icon">
-                                           <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                           <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                           <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                      </ul>
-                                 </div>
-                            </div>
-<!--         
-                            <div class="col-lg col-md-6 col-12">
-                                 <div class="single-footer-items">
-                                      <h3>Service We Offer</h3>
-        
-                                      <ul class="menu-list">
-                                           <li><a href="#">Cloud Computing Solution</a></li>
-                                           <li><a href="#">Cybersecurity & Compliance</a></li>
-                                           <li><a href="#">Software Development</a></li>
-                                           <li><a href="#">It Consulting & Support</a></li>
-                                      </ul>
-                                 </div>
-                            </div> -->
-        
-                            <div class="col-lg-4 col-md-6 col-12">
-                                 <div class="single-footer-items">
-                                      <h3>Useful Links</h3>
-        
-                                      <ul class="menu-list">
-                                        <li><a href="about.html">About Us </a></li>
-                                        <li><a href="#">Our Activities</a></li>
-                                        <li><a href="blog.html">Blog & News</a></li>
-                                        <li><a href="index.html#contact">Contact Us</a></li>
-                                  </ul>
-                                 </div>
-                            </div>
-        
-        
-                            <div class="col-lg-3 col-md-6 col-12">
-                                 <div class="single-footer-items">
-                                      <h3>Contact Us</h3>
-        
-                                      <div class="contact-box">
-                                        <div class="icon">
-                                          <img src="assets/img/icons/footer1-icon1.png" alt="">
-                                        </div>
-                                        <div class="pera">
-                                          <a href="tel:0500222333">0500 222 333</a>
-                                        </div>
-                                      </div>
-
-                                      <div class="contact-box">
-                                        <div class="icon">
-                                          <img src="assets/img/icons/footer1-icon2.png" alt="">
-                                        </div>
-                                        <div class="pera">
-                                          <a href="tel:0356588547">03 5658 8547</a>
-                                        </div>
-                                      </div>
-
-                                      <div class="contact-box">
-                                        <div class="icon">
-                                          <img src="assets/img/icons/footer1-icon3.png" alt="">
-                                        </div>
-                                        <div class="pera">
-                                          <a href="mailto:admin@techxen.org">admin@techxen.org</a>
-                                        </div>
-                                      </div>
-
-                                      <div class="contact-box">
-                                        <div class="icon">
-                                          <img src="assets/img/icons/footer1-icon4.png" alt="">
-                                        </div>
-                                        <div class="pera">
-                                          <a href="mailto:admin@techxen.org">www.techxen.org</a>
-                                        </div>
-                                      </div>
-        
-                                 </div>
-                            </div>
-        
-                       </div>
-        
-                       <div class="space40"></div>
-                  </div>
-
-                  <div class="copyright-area">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-md-5">
-                             <div class="coppyright">
-                               <p>Copyright @2024 TechXen.All Rights Reserved</p>
-                             </div>
+          <div class="row">
+              <div class="col-lg-5 col-md-6 col-12">
+                    <div class="single-footer-items footer-logo-area">
+                      <div class="footer-logo">
+                        <a href="#" class="clan-name-logo-footer">
+                          <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-footer">
+                          <span class="logo-text">Okarowok<br>Wibye Acel</span>
+                        </a>
+                      </div>
+                        <div class="space20"></div>
+                        <div class="heading1">
+                          <p>Okarowok Wibye Acel Clan - Guardians of Lango heritage since 1887. Preserving culture, promoting unity, and building sustainable futures.</p>
                         </div>
-                        <div class="col-md-7">
-                             <div class="coppyright right-area">
-                                  <a href="#">Terms & Conditions</a>
-                                  <a href="#">Privacy Policy</a>
-                             </div>
-                        </div>
-                   </div>
+                        <ul class="social-icon">
+                              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
                     </div>
-               </div>
-      
+              </div>
+  <!--         
+              <div class="col-lg col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Service We Offer</h3>
+
+                        <ul class="menu-list">
+                              <li><a href="#">Cloud Computing Solution</a></li>
+                              <li><a href="#">Cybersecurity & Compliance</a></li>
+                              <li><a href="#">Software Development</a></li>
+                              <li><a href="#">It Consulting & Support</a></li>
+                        </ul>
+                    </div>
+              </div> -->
+
+              <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Useful Links</h3>
+
+                        <ul class="menu-list">
+                          <li><a href="about.html">About Us </a></li>
+                          <li><a href="#">Our Activities</a></li>
+                          <li><a href="blog.html">Blog & News</a></li>
+                          <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                    </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Contact Us</h3>
+
+                        <div class="contact-box">
+                          <div class="icon">
+                            <img src="assets/img/icons/footer1-icon1.png" alt="">
+                          </div>
+                          <div class="pera">
+                            <a href="tel:0393249845">03 9324 9845</a>
+                          </div>
+                        </div>
+
+                        <div class="contact-box">
+                          <div class="icon">
+                            <img src="assets/img/icons/footer1-icon2.png" alt="">
+                          </div>
+                          <div class="pera">
+                            <a href="tel:+256764820075">+256 764 820075</a>
+                          </div>
+                        </div>
+
+                        <div class="contact-box">
+                          <div class="icon">
+                            <img src="assets/img/icons/footer1-icon3.png" alt="">
+                          </div>
+                          <div class="pera">
+                            <a href="mailto:clancouncil@okarowok.ac.ug">clancouncil@okarowok.ac.ug</a>
+                          </div>
+                        </div>
+
+                    </div>
+              </div>
+
+          </div>
+
+          <div class="space40"></div>
+    </div>
+
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+                <div class="coppyright">
+                  <p>Copyright @2024 TechXen.All Rights Reserved</p>
                 </div>
-        
-                <!--===== FOOTER AREA END =======-->
+          </div>
+          <div class="col-md-7">
+                <div class="coppyright right-area">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+          </div>
+      </div>
+      </div>
+  </div>
+
+  </div>
+
+  <!--===== FOOTER AREA END =======-->
 
 
      <script src="assets/js/bootstrap.min.js"></script>
@@ -633,6 +624,21 @@
         // Fallback if transition doesn't fire
         setTimeout(handleHashScroll, 2000); 
       });
+      </script>
+      <script>
+        // For Dropdowns
+        function toggleAccordion(header) {
+          const content = header.nextElementSibling;
+          const icon = header.querySelector('.accordion-icon');
+          
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.style.transform = 'rotate(180deg)';
+          }
+        }
       </script>
 </body>
 </html>
