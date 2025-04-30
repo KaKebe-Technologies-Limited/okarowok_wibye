@@ -2850,10 +2850,10 @@ body.body {
  COMMON AREA CSS
 ::::::::::::::::::::::::::
 */
-.comon-body {
+/* .comon-body { */
   /*Pagination*/
   /* video button  */
-}
+/* } */
 .comon-body .theme-pagination ul {
   margin: 0;
   padding: 0;
@@ -2950,9 +2950,9 @@ body.body {
   border-bottom: 10px solid transparent;
 }
 
-.video-buttton9 {
+/* .video-buttton9 { */
   /* video button  */
-}
+/* } */
 .video-buttton9 .video-play-button {
   position: relative;
   z-index: 10;
@@ -3027,9 +3027,9 @@ body.body {
   }
 }
 
-.video-paly10 {
+/* .video-paly10 { */
   /* video button  */
-}
+/* } */
 .video-paly10 .video-play-button {
   position: relative;
   z-index: 10;
@@ -3567,6 +3567,15 @@ a.header__search.header-search-btn p {
  BUTTONS AREA CSS
 ::::::::::::::::::::::::::
 */
+#leadbutton {
+  margin-top: 3%;
+  text-decoration: none;
+}
+
+#leadbutton a {
+  color: #000000 !important;
+}
+
 .theme-btn1 {
   display: inline-block;
   background-color: var(--ztc-bg-main-bg-1);
