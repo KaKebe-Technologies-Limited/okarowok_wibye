@@ -21,6 +21,70 @@
      <link rel="stylesheet" href="assets/css/mobile-menu.css">
      <link rel="stylesheet" href="assets/css/main.css">
 
+     <style>
+      .centered-table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed; /* for fixed column ratios */
+      }
+
+      .table-2 {
+        max-width: fit-content;
+      }
+
+      .table-2 .col-1 { width: 10%; }
+      .table-2 .col-2 { width: 90%; }
+
+      .table-3 .col-1 { width: 10%; }
+      .table-3 .col-2 { width: 55%; }
+      .table-3 .col-3 { width: 35%; }
+  
+      .table-5 .col-1 { width: 9%; }
+      .table-5 .col-2 { width: 27%; }
+      .table-5 .col-3 { width: 10%; }
+      .table-5 .col-3 { width: 27%; }
+      .table-5 .col-3 { width: 27%; }
+
+      .defense-point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+      }
+
+      @media (max-width: 576px) {
+        .centered-table {
+          min-width: min-content;
+          table-layout: auto;
+        }
+
+        .timeline {
+          padding-left: 0px;
+        }
+
+        .timeline:before {
+          display: none;
+        }
+
+        .milestone-year {
+          position: relative;
+          margin-bottom: 5%;
+          left: 0;
+        }
+
+        .milestone-card {
+          padding: 15px;
+        }
+
+        .key-point h5, .defense-point h5,
+        .conference-detail h5 {
+          margin-bottom: 5%;
+        }
+
+      }
+     </style>
+
      <!--=====JQUERY=======-->
      <script src="assets/js/jquery-3-7-1.min.js"></script>
 </head>
@@ -101,7 +165,7 @@
               <div class="site-logo">
                 <a href="#" class="d-flex clan-name-logo text-center">
                   <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image">
-                  <span class="logo-text">Okarowok Wibye Acel Clan</span>
+                  <!-- <span class="logo-text">Okarowok Wibye Acel Clan</span> -->
                 </a>
               </div>
   
@@ -113,64 +177,6 @@
                   <li class="dropdown-menu-parrent"><a href="#">About <i class="fa-solid"></i></a></li>
   
                   <li class="dropdown-menu-parrent"><a href="service.html">Activities <i class="fa-solid"></i></a></li>
-  <!-- 
-                  <li class="dropdown-menu-parrent"><a href="#" class="main1">Pages <i class="fa-solid fa-angle-down"></i></a>
-                    <div class="mega-menu-all">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="mega-menu-single dis1">
-                          <h3>Our Services</h3>
-                          <ul>
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="service-details-left.html">Details Left</a></li>
-                            <li><a href="service-details-right.html">Details Right</a></li>
-                            <li><a href="service-details.html">Single Details</a></li>
-                          </ul>
-                        </div>
-                      </div>
-  
-                      <div class="col-md-3">
-                        <div class="mega-menu-single">
-                          <h3>News Letter</h3>
-                          <ul>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                            <li><a href="blog-details-left.html">Details Left</a></li>
-                            <li><a href="blog-details-right.html">Details Right</a></li>
-                            <li><a href="blog-details.html">Single Details</a></li>
-                          </ul>
-                        </div>
-                      </div>
-  
-                      <div class="col-md-3">
-                        <div class="mega-menu-single">
-                          <h3>Page's</h3>
-                          <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="testimonial.html">Testimonial</a></li>
-                            <li><a href="error.html">ERROR 404</a></li>
-  
-                          </ul>
-                        </div>
-                      </div>
-  
-                      <div class="col-md-3">
-                        <div class="mega-menu-single">
-                          <h3>Our Project's</h3>
-                          <ul>
-                            <li><a href="project.html">Project</a></li>
-                            <li><a href="project-details-left.html">Details Left</a></li>
-                            <li><a href="project-details-right.html">Details Right</a></li>
-                            <li><a href="project-details.html">Single Details</a></li>
-                          </ul>
-                        </div>
-                      </div>
-  
-                    </div>
-                    </div>
-                  </li> -->
   
                   <li class="dropdown-menu-parrent"><a href="blog.html">Blog <i class="fa-solid"></i></a></li>
                 </ul>
@@ -208,7 +214,7 @@
         <div class="mobile-logo">
           <a href="#" class="clan-name-logo-mobile">
             <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-mobile">
-            <span class="logo-text">Okarowok Wibye Acel</span>
+            <!-- <span class="logo-text">Okarowok Wibye Acel</span> -->
           </a>
         </div>
         <div class="mobile-nav-icon">
@@ -590,14 +596,21 @@
             </div>
             <div class="space30"></div>
             <div class="table-responsive">
-              <table class="table table-bordered">
+              <table class="table table-bordered centered-table table-5">
+                <colgroup>
+                  <col class="col-1">
+                  <col class="col-2">
+                  <col class="col-3">
+                  <col class="col-4">
+                  <col class="col-5">
+                </colgroup>
                 <thead>
                   <tr>
-                    <th>No.</th>
-                    <th>Leaders/Heads</th>
-                    <th>Delegates</th>
-                    <th>Location</th>
-                    <th>County</th>
+                    <th class="col-1">No.</th>
+                    <th class="col-2">Leaders/Heads</th>
+                    <th class="col-3">Delegates</th>
+                    <th class="col-4">Location</th>
+                    <th class="col-5">County</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -678,12 +691,17 @@
       </div>
       <div class="space30"></div>
       <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered centered-table table-3">
           <thead>
+            <colgroup>
+              <col class="col-1">
+              <col class="col-2">
+              <col class="col-3">
+            </colgroup>
             <tr>
-              <th>SN</th>
-              <th>Office</th>
-              <th>Officer</th>
+              <th class="col-1">SN</th>
+              <th class="col-2">Office</th>
+              <th class="col-3">Officer</th>
             </tr>
           </thead>
           <tbody>
@@ -733,7 +751,12 @@
       </div>
       <div class="space30"></div>
       <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered centered-table table-3">
+          <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+          </colgroup>
           <thead>
             <tr>
               <th>SN</th>
@@ -762,7 +785,11 @@
       </div>
       <div class="space30"></div>
       <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered centered-table table-2">
+          <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+          </colgroup>
           <thead>
             <tr>
               <th>SN</th>
@@ -985,7 +1012,7 @@
                       <div class="footer-logo">
                         <a href="#" class="clan-name-logo-footer">
                           <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-footer">
-                          <span class="logo-text">Okarowok<br>Wibye Acel</span>
+                          <!-- <span class="logo-text">Okarowok<br>Wibye Acel</span> -->
                         </a>
                       </div>
                         <div class="space20"></div>

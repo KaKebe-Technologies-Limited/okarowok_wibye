@@ -22,6 +22,35 @@
   <link rel="stylesheet" href="assets/css/mobile-menu.css"/>
   <link rel="stylesheet" href="assets/css/main.css"/>
 
+  <style>
+    .image.image-anime, .bottom-area .image img {
+      border-radius: 5% !important;
+    }
+
+    .centered-table {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      table-layout: fixed; /* for fixed column ratios */
+    }
+
+    @media (max-width: 576px) {
+      .centered-table {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: min-content;
+        table-layout: auto;
+      }
+    }
+
+    .col-1 { width: 10%; }
+    .col-2 { width: 20%; }
+    .col-3 { width: 20%; }
+    .col-4 { width: 20%; }
+    .col-5 { width: 20%; }
+
+  </style>
+
   <!--=====JQUERY=======-->
   <script src="assets/js/jquery-3-7-1.min.js"></script>
 </head>
@@ -91,7 +120,7 @@
               <div class="site-logo">
                 <a href="#" class="d-flex clan-name-logo text-center">
                   <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image">
-                  <span class="logo-text">Okarowok Wibye Acel Clan</span>
+                  <!-- <span class="logo-text">Okarowok Wibye Acel Clan</span> -->
                 </a>
               </div>
 
@@ -170,7 +199,7 @@
 
               <div class="header1-buttons">
                    <div class="button" style="margin-top: 6px;">
-                     <a class="theme-btn16" href="index.html#contact">Get Started <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                     <a class="theme-btn16" href="index.html#contact">Get in Touch <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a>
                    </div>
               </div>
 
@@ -190,7 +219,7 @@
           <div class="mobile-logo">
             <a href="#" class="clan-name-logo-mobile">
               <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-mobile">
-              <span class="logo-text">Okarowok Wibye Acel</span>
+              <!-- <span class="logo-text">Okarowok Wibye Acel</span> -->
             </a>
           </div>
           <div class="mobile-nav-icon">
@@ -294,7 +323,7 @@
         <div class="col-lg-6 text-center">
           <div class="main-heading">
             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" alt=""/> Okarowok Wibye Acel Clan
+              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Okarowok Wibye Acel Clan
             </span>
             <h1 class="tg-element-title">Propagating Cultural, Social, and Ecological Safety</h1>
             <p id="hero-p">
@@ -324,7 +353,7 @@
         <div class="col-lg-5">
           <div class="heading9">
             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" alt=""/> About the Clan
+              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> About the Clan
             </span>
             <h2 class="tg-element-title">Our Vision, Mission &amp; Core Values</h2>
             <div class="space16"></div>
@@ -373,7 +402,7 @@
         <div class="col-lg-6 m-auto text-center">
           <div class="heading9">
             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" alt=""/> Our Voices
+              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Our Voices
             </span>
             <h2 class="tg-element-title">Testimonials from Clan Members</h2>
           </div>
@@ -436,7 +465,7 @@
         <div class="col-lg-6 m-auto text-center">
           <div class="heading9">
             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" alt=""/> Clan Cabinet
+              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Clan Cabinet
             </span>
             <h2 class="tg-element-title">Meet Our Leadership</h2>
           </div>
@@ -490,7 +519,7 @@
       <div class="col-lg-8 m-auto text-center">
         <div class="heading9">
           <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-            <img src="assets/img/icons/span9.svg" alt=""/> Structure
+            <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Structure
           </span>
           <h2 class="tg-element-title">Governance Hierarchy</h2>
           <p class="mt-3">Our 8-tier leadership model ensures effective clan management</p>
@@ -627,14 +656,21 @@
       <div class="row">
         <div class="col-lg-6 m-auto text-center">
           <div class="heading9">
-            <span class="span"><img src="assets/img/icons/span9.svg" alt=""/> Chiefdoms</span>
+            <span class="span"><img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Chiefdoms</span>
             <h2 class="tg-element-title">Population of Adult Members (18+)</h2>
           </div>
         </div>
       </div>
       <div class="space30"></div>
       <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered centered-table">
+          <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+            <col class="col-5">
+          </colgroup>
           <thead>
             <tr>
               <th>No.</th><th>Chiefdom</th><th>District</th><th>Chief</th><th>Pop.</th>
@@ -680,7 +716,7 @@
             <div class="row">
                 <div class="col-lg-6 m-auto text-center">
                     <div class="heading9">
-                        <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><img src="assets/img/icons/span9.svg" alt=""> Contact Us</span>
+                        <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><img src="assets/img/icons/span9.svg" width="20" height="20" alt=""> Contact Us</span>
                         <h2 class="tg-element-title">Let's Start the Conversation</h2>
                     </div>
                 </div>
@@ -791,7 +827,7 @@
                           <div class="footer-logo">
                             <a href="#" class="clan-name-logo-footer">
                               <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-footer">
-                              <span class="logo-text">Okarowok<br>Wibye Acel</span>
+                              <!-- <span class="logo-text">Okarowok<br>Wibye Acel</span> -->
                             </a>
                           </div>
                             <div class="space20"></div>
