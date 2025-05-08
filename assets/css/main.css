@@ -23467,9 +23467,22 @@ li.has-dropdown1 span {
 
 /* Semantics Section Styles */
 .semantic-item {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(44, 95, 158, 0.1);
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  background: #ffffff;
+  /* border-left: 3px solid #d4af37; */
+}
+
+.semantic-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(44, 95, 158, 0.15);
+  border-left-width: 4px;
+  background: #f8faff;
 }
 
 .semantic-item h4 {
@@ -23885,19 +23898,29 @@ li.has-dropdown1 span {
 }
 
 /* History Carousel */
-.history-carousel .carousel-item {
+.carousel-item {
   min-height: 400px;
+  padding: 15px;
 }
+
 .history-card {
   background: rgba(255,255,255,0.9);
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 0; /* Remove extra margin now that container is gone */
+  box-shadow: 0 2px 15px rgba(44, 95, 158, 0.1); /* Softer blue-tinted shadow */
+  border: 1px solid #e3e9ff;
 }
+
 .history-card h3 {
-  color: #2a5a3c;
-  margin-bottom: 20px;
+  color: #2c5f9e; /* Primary blue color */
+  border-bottom: 3px solid #d4af37; /* Gold accent */
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
 }
+
 .history-card i {
   margin-right: 10px;
 }
@@ -23932,79 +23955,189 @@ li.has-dropdown1 span {
   justify-content: center;
 }
 
-/* History Carousel */
-.history-carousel {
-  background: #f8f5f0;
-  padding: 40px 0;
-  border-radius: 15px;
+/* Remove history-carousel and adjust layout */
+#historyCarousel {
+  padding: 20px 0 0; /* Reduced top padding */
 }
 
-.history-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-}
-
-.history-card h3 {
-  color: #2a5a3c;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
-}
-
-.content-section {
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.offer-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin: 25px 0;
-}
-
-.defense-infra {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 25px;
-}
-
-.defense-item {
-  text-align: center;
-  padding: 15px;
-}
-.defense-item i {
-  font-size: 2rem;
-  color: #d4af37;
-  margin-bottom: 10px;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  width: 5%;
-  color: #2a5a3c;
-  opacity: 1;
-}
-
-/* History Carousel (Blue Theme) */
-.history-card {
-  background: #f8faff;
-  border: 1px solid #e3e9ff;
-}
-
-.history-card h3 {
-  color: #2c5f9e;
-  border-color: #4a86e8;
+/* CSS Column Layout */
+.multi-column-list {
+  column-count: 2;
+  column-gap: 20px;
 }
 
 .key-point {
+  background: #f5f8ff; /* Light blue background */
+  border-left: 4px solid #d4af37; /* Gold accent */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.key-point h5 {
+  color: #2c5f9e; /* Blue heading */
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.key-point ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.key-point li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+
+.key-point li:before {
+  content: "•";
+  color: #d4af37; /* Gold bullet */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+  width: 5%;
+  color: #2c5f9e; /* Blue controls */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.8;
+}
+
+.defense-point {
   background: #ffffff;
-  border-left: 3px solid #4a86e8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 12px rgba(44, 95, 158, 0.06);
+  border: 1px solid #e3e9ff;
+  text-align: center; /* Center alignment for defense infrastructure */
+}
+
+.defense-point i {
+  color: #d4af37; /* Gold icon */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.defense-point h5 {
+  color: #2c5f9e; /* Blue heading */
+  border-bottom: 2px solid #e3e9ff; /* Light blue border */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Defense points grid adjustment */
+.row .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Defense Points adjustment for consistency */
+.defense-point ul {
+  padding-left: 20px; /* Add space for bullets */
+  text-align: left; /* Left-align text within centered container */
+  width: fit-content;
+}
+
+.defense-point li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.defense-point li:before {
+  content: "•";
+  color: #d4af37;
+  position: absolute;
+  left: 0;
+}
+
+/* Improved Conference Detail List Alignment */
+.conference-detail {
+  background: #f5f8ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(44, 95, 158, 0.1);
+  border: 1px solid #e3e9ff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all child elements */
+}
+
+.conference-detail h5 {
+  color: #2c5f9e;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  width: 100%; /* Ensure heading spans full width */
+}
+
+.conference-detail ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto; /* Center the ul block */
+  width: fit-content; /* Shrink to content width */
+  text-align: left; /* Left-align text within centered block */
+}
+
+.conference-detail li {
+  position: relative;
+  padding: 8px 0 8px 20px; /* Add left padding for bullets */
+  margin-bottom: 5px;
+  color: #3a4a6b;
+}
+
+.conference-detail li:before {
+  content: "•";
+  color: #d4af37;
+  position: absolute;
+  left: 5px; /* Position bullet closer to text */
+  font-weight: bold;
+}
+
+.attendance-note {
+  background: #2c5f9e;
+  color: white;
   padding: 15px;
-  margin: 10px 0;
+  border-radius: 8px;
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .history-card {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .key-point {
+    margin: 10px 0;
+    padding: 15px;
+  }
+  
+  .defense-point {
+    margin: 10px 0;
+  }
+
+  .multi-column-list {
+    flex-direction: column; /* For Option 1 */
+    column-count: 1; /* For Option 2 */
+  }
 }
 
 /* Blog Styling Suggestions */

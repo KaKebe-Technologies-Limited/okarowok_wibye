@@ -49,6 +49,52 @@
       .table-5 .col-3 { width: 27%; }
       .table-5 .col-3 { width: 27%; }
 
+      /* Center-align numeric columns in all tables */
+      .centered-table td:first-child,
+      .centered-table th:first-child,
+      .table-2 td:first-child,
+      .table-2 th:first-child,
+      .table-3 td:first-child,
+      .table-3 th:first-child,
+      .table-5 td:first-child,
+      .table-5 th:first-child {
+        text-align: center;
+      }
+
+      /* Specific adjustment for the serial number column */
+      .centered-table td:nth-child(1),
+      .table-2 td:nth-child(1),
+      .table-3 td:nth-child(1),
+      .table-5 td:nth-child(1) {
+        width: 8%; /* Slightly narrower for numbers */
+        font-weight: 500; /* Medium weight for better readability */
+      }
+
+      /* Keep header text centered for some columns */
+      .table-5 th {
+        text-align: center;
+      }
+
+      /* Right-align numeric data columns (like delegate counts) as well as other columns with short data like location and county columns */
+      .table-5 td:nth-child(3),
+      .table-5 td:nth-child(4),
+      .table-5 td:nth-child(5) {
+        text-align: center;
+        /* padding-right: 15px; */ /* Add breathing room */
+      }
+
+      .table-active td:first-of-type { text-align: left; padding-left: 1rem; }
+      .table-active td:nth-child(2) { text-align: center; }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .centered-table td:first-child,
+        .centered-table th:first-child {
+          text-align: left; /* Stack to left-align on mobile */
+          width: auto;
+        }
+      }
+
       .defense-point {
         display: flex;
         flex-direction: column;
@@ -357,8 +403,8 @@
             <p><strong>Core Values:</strong></p>
             <ul class="corevalues">
               <li>Excellence (Adwoggi owok)</li>
-              <li>Godliness (Ngeyo kede lworo Obanga)</li>
-              <li>Patriotism (Maro Atekere kede Lobo Uganda)</li>
+              <li>Godliness (Ŋeyo kede lworo Obaŋa)</li>
+              <li>Patriotism (Maro atekere kede lobo Uganda)</li>
               <li>Hardwork (Tic Atek)</li>
             </ul>
 
@@ -428,8 +474,20 @@
         </div>
         <!--=====HISTORICAL MILESTONES END=======-->
 
-        <div class="history-carousel sp" data-aos="fade-up">
+        <div class="sp" data-aos="fade-up">
           <div class="container">
+            <div class="row">
+              <div class="col-lg-8 m-auto text-center">
+                <div class="heading1">
+                  <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
+                    <img src="assets/img/icons/span1.png" alt=""/> Our History
+                  </span>
+                  <h2 class="tg-element-title">History of the Clan</h2>
+                  <p>Learn about the origin and rich history of Okarowok Wibye Acel Clan</p>
+                </div>
+              </div>
+            </div>
+
             <div id="historyCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
 
@@ -453,9 +511,16 @@
                       <div class="col-md-6">
                         <div class="key-point">
                           <h5>Geographical Reach</h5>
-                          <p>Controlled villages including:<br>
-                          Ulaya, Bar Ibuu, Adyedda, Okut,<br>
-                          Adang Ani, Tegweng, Aroca, Barajet</p>
+                          <ul class="multi-column-list">
+                            <li>Ulaya</li>
+                            <li>Bar Ibuu</li>
+                            <li>Adyedda</li>
+                            <li>Okut</li>
+                            <li>Adang Ani</li>
+                            <li>Tegweng</li>
+                            <li>Aroca</li>
+                            <li>Barajet</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -474,7 +539,7 @@
                           <h5>British Overtures</h5>
                           <ul>
                             <li>Offered warrant chief position</li>
-                            <li>Gifts: bicycle and Kiganda robe (kanzu)</li>
+                            <li>Gifts: Bicycle and Kiganda robe (kanzu)</li>
                             <li>Goal: Implement indirect rule system</li>
                           </ul>
                         </div>
@@ -702,7 +767,7 @@
               <col class="col-3">
             </colgroup>
             <tr>
-              <th class="col-1">SN</th>
+              <th class="col-1">No.</th>
               <th class="col-2">Office</th>
               <th class="col-3">Officer</th>
             </tr>
@@ -720,7 +785,7 @@
             <tr><td>10</td><td>Minister of Constitutional Affairs and Attorney General</td><td>Counsel Patrick Ongom</td></tr>
             <tr><td>11</td><td>Minister of Lands</td><td>Bryan Amute</td></tr>
             <tr><td>12</td><td>Minister of Health</td><td>Dr Bob Opio</td></tr>
-            <tr><td>13</td><td>Minister of Women Affairs</td><td>Janet Okello Anyeki</td></tr>
+            <tr><td>13</td><td>Minister of Women's Affairs</td><td>Janet Okello Anyeki</td></tr>
             <tr><td>14</td><td>Minister of Youth Affairs</td><td>David Atyam</td></tr>
             <tr><td>15</td><td>Minister of Trade and Industry</td><td>Tony Adeka</td></tr>
             <tr><td>16</td><td>Minister of Project and Investments</td><td>Sam Odongo</td></tr>
@@ -729,11 +794,11 @@
             <tr><td>19</td><td>Minister of Adolescence and Girls' Affairs</td><td>Gloria Atima</td></tr>
             <tr><td>20</td><td>Minister of Domestic Relations and Family Life Education</td><td>Agness Okello Okii</td></tr>
             <tr><td>21</td><td>Minister of External Relations and Diplomacy</td><td>Patrick Okwir Angulu</td></tr>
-            <tr><td>22</td><td>Minister of Protocol (Office of Awitong)</td><td>Gad Benson Obua</td></tr>
+            <tr><td>22</td><td>Minister of Protocol (Office of Awitong)</td><td>Obua Gad Benson</td></tr>
             <tr><td>23</td><td>Minister of General Duties (Office of Awitong)</td><td>Henry Owiny</td></tr>
             <tr><td>24</td><td>Minister of Gender and Social Inclusion</td><td>Geoffrey Otim</td></tr>
             <tr><td>25</td><td>Minister of Education</td><td>Grace Adupa</td></tr>
-            <tr><td>26</td><td>Minister of Information and Computer Technology</td><td>Bony Otucu</td></tr>
+            <tr><td>26</td><td>Minister of Information and Computer Technology</td><td>Otucu Bonny</td></tr>
             <tr><td>27</td><td>Minister of Games and Sports</td><td>Tom Akona</td></tr>
             <tr><td>28</td><td>Minister of Peace and Compensation</td><td>David Otim</td></tr>
             <tr><td>29</td><td>Deputy Minister of Protocol</td><td>Lillian Alyek</td></tr>
@@ -762,7 +827,7 @@
           </colgroup>
           <thead>
             <tr>
-              <th>SN</th>
+              <th>No.</th>
               <th>Commission</th>
               <th>Name</th>
             </tr>
@@ -795,7 +860,7 @@
           </colgroup>
           <thead>
             <tr>
-              <th>SN</th>
+              <th>No.</th>
               <th>Name</th>
             </tr>
           </thead>

@@ -37,6 +37,16 @@
       table-layout: fixed; /* for fixed column ratios */
     }
 
+    /* Center-align numeric columns in the table */
+    .centered-table td:first-child,
+    .centered-table th:first-child,
+    .centered-table td:nth-child(3),
+    .centered-table th:nth-child(3),
+    .centered-table td:nth-child(5),
+    .centered-table th:nth-child(5) {
+      text-align: center;
+    }
+
     @media (max-width: 576px) {
       .centered-table {
         margin-left: 0;
@@ -51,6 +61,9 @@
     .col-3 { width: 20%; }
     .col-4 { width: 20%; }
     .col-5 { width: 20%; }
+
+    .table-active td:first-of-type { text-align: left; padding-left: 2rem; }
+    .table-active td:nth-child(2) { text-align: center; }
 
   </style>
 
@@ -368,7 +381,7 @@
             <h6><strong>Core Values:</strong></h6>
             <ul class="corevalues">
                 <li>Excellence (Adwoggi owok)</li>
-                <li>Godliness (Ngeyo kede lworo Obanga)</li>
+                <li>Godliness (Ŋeyo kede lworo Obaŋa)</li>
                 <li>Patriotism (Maro Atekere kede Lobo Uganda)</li>
                 <li>Hardwork (Tic Atek)</li>
             </ul>
