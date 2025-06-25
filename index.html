@@ -15,6 +15,7 @@
 
   <!--=====CSS=======-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fontawesome.css"/>
   <link rel="stylesheet" href="assets/css/magnific-popup.css"/>
   <link rel="stylesheet" href="assets/css/nice-select.css"/>
@@ -69,6 +70,60 @@
     .table-active td:first-of-type { text-align: left; padding-left: 3%; }
     .table-active td:nth-child(2) { text-align: center; }
 
+/* Floating header initial state */
+#mainHeader {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Rounded container */
+.header-inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.logo-img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Nav link styling */
+.nav-links .nav-link {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.nav-links .nav-link:hover {
+  text-decoration: none;
+}
+
+/* Sticky scroll effect */
+#mainHeader.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+#mainHeader.sticky .header-inner {
+  width: 100%;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
   </style>
 
   <!--=====JQUERY=======-->
@@ -91,7 +146,7 @@
   
   <!--=====progress END=======-->
   
-  <!-- Preloader -->
+  <!-- Preloader START --><!-- 
   <section>
     <div id="preloader">
       <div id="ctn-preloader" class="ctn-preloader ctn-preloader1">
@@ -128,146 +183,52 @@
         <div class="loader-section-right loader-section section-right"></div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- Preloader END -->
 
-  <!--=====HEADER START=======-->
-  <header>
-    <div class="header-area header-area9 header-area-all d-none d-lg-block" id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="header-elements">
-              <div class="site-logo">
-                <a href="#" class="d-flex clan-name-logo text-center">
-                  <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image">
-                  <!-- <span class="logo-text">Okarowok Wibye Acel Clan</span> -->
-                </a>
-              </div>
+  <header id="mainHeader">
+    <div class="header-inner shadow">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+          
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/img/logo/rhino-head.png" alt="Logo" class="logo-img me-2">
+          </a>
 
+          <!-- Desktop Nav (only visible on large screens) -->
+          <ul class="navbar-nav nav-links d-none d-lg-flex justify-content-center flex-grow-1 gap-4">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          </ul>
 
-              <div class="main-menu-ex main-menu-ex1">
-               <ul>
-                 <li><a href="#">Home <i class="fa-solid"></i></a></li>
+          <!-- Desktop CTA -->
+          <a class="theme-btn16 d-none d-lg-block" href="index.html#contact">Get in Touch <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a>
 
-                 <li class="dropdown-menu-parrent"><a href="about.html">About <i class="fa-solid"></i></a></li>
-
-                 <li class="dropdown-menu-parrent"><a href="service.html">Activities <i class="fa-solid"></i></a></li>
-
-                 <li class="dropdown-menu-parrent"><a href="gallery.html">Gallery <i class="fa-solid"></i></a></li>
-
-                 <li class="dropdown-menu-parrent"><a href="blog.html">Blog <i class="fa-solid"></i></a></li>
-               </ul>
-              </div>
-
-
-
-              <div class="header1-buttons">
-                   <div class="button" style="margin-top: 6px;">
-                     <a class="theme-btn16" href="index.html#contact">Get in Touch <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a>
-                   </div>
-              </div>
-
-            </div>
-          </div>
+          <!-- Mobile Toggle -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </div>
+
+        <!-- Mobile Nav: Only visible below lg -->
+        <div class="collapse d-lg-none w-100" id="mobileNav">
+          <ul class="navbar-nav mt-3 justify-content-center align-items-center text-center mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="theme-btn16 mt-2" href="index.html#contact">Get in Touch ↗</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
-  <!--=====HEADER END=======-->
 
-  <!--=====Mobile header start=======-->
-  <div class="mobile-header d-block d-lg-none ">
-    <div class="container-fluid">
-      <div class="col-12">
-        <div class="mobile-header-elements">
-          <div class="mobile-logo">
-            <a href="#" class="clan-name-logo-mobile">
-              <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-mobile">
-              <!-- <span class="logo-text">Okarowok Wibye Acel</span> -->
-            </a>
-          </div>
-          <div class="mobile-nav-icon">
-            <i class="fa-duotone fa-bars-staggered"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="mobile-sidebar d-block d-lg-none">
-    <div class="logo-m">
-      <a href="#" class="clan-name-logo-mobile">
-        Okarowok Wibye Acel
-      </a>
-    </div>
-    <div class="menu-close">
-      <i class="fa-solid fa-xmark"></i>
-    </div>
-    <div class="mobile-nav">
-
-      <ul>
-        <li class="has-dropdown"><a href="#">Home </a></li>
-        
-        <li><a href="about.html">About Us</a></li>
-
-        <li class="has-dropdown"><a href="service.html">Activities</a></li>
-
-        <li class="has-dropdown"><a href="#"> Gallery </a></li>
-
-        <li class="has-dropdown"><a href="blog.html">Blog</a></li>
-      </ul>
-      
-      <div class="mobile-button">
-        <a class="menu-btn2" href="service.html">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-      </div>
-
-      <div class="single-footer-items">
-        <h3>Contact Us</h3>
-
-        <div class="contact-box">
-          <div class="icon">
-            <img src="assets/img/icons/footer1-icon1.png" alt="">
-          </div>
-          <div class="pera">
-            <a href="tel:+256764820075">+256 764 820075</a>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <div class="icon">
-            <img src="assets/img/icons/footer1-icon2.png" alt="">
-          </div>
-          <div class="pera">
-            <a href="tel:0393249845">03 9324 9845</a>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <div class="icon">
-            <img src="assets/img/icons/footer1-icon3.png" alt="">
-          </div>
-          <div class="pera">
-            <a href="mailto:clancouncil@okarowok.ac.ug">clancouncil@okarowok.ac.ug</a>
-          </div>
-        </div>
-
-    </div>
-
-      <div class="contact-infos">
-        <h3>Our Location</h3>
-        <ul class="social-icon">
-            <li><a href="https://www.facebook.com/Okarowokwibyeacel"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://x.com/OkarWibyeAcel?t=aA4AO4abE_HrKAIMyUQWiA&s=08"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://wa.me/+256772614436"><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-  <!--=====Mobile header end=======-->
 
   <!--=====HERO AREA START=======-->
   <div class="hero9" style="background-image: url(assets/img/bg/hero9-bg.jpg);">
@@ -814,7 +775,6 @@
                             <div class="heading">
                                 <h5>Call Or Text</h5>
                                 <a href="tel:+256772614436">+256 772 614436</a>
-                                <a href="tel:+256774927372">+256 774 927372</a>
                             </div>
                             </div>
                         </div>
@@ -826,7 +786,7 @@
                             </div>
                             <div class="heading">
                                 <h5>Email Us Today</h5>
-                                <a href="mailto:clancouncil@okarowok.ac.ug">clancouncil@okarowok.ac.ug</a>
+                                <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
                             </div>
                             </div>
                         </div>
@@ -899,7 +859,7 @@
                           <img src="assets/img/icons/footer1-icon2.png" alt="">
                         </div>
                         <div class="pera">
-                          <a href="tel:+256772614436">+256 772 614436</a>
+                          <a href="tel:+256774927372">+256 774 927372</a>
                         </div>
                       </div>
 
@@ -908,7 +868,7 @@
                           <img src="assets/img/icons/footer1-icon3.png" alt="">
                         </div>
                         <div class="pera">
-                          <a href="mailto:admin@techxen.org">clancouncil@okarowok.ac.ug</a>
+                          <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
                         </div>
                       </div>
 <!-- 
@@ -947,6 +907,7 @@
 
   <!--===== SCRIPTS =======-->
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/fontawesome.js"></script>
   <script src="assets/js/jquery.countup.js"></script>
@@ -983,6 +944,12 @@
       // Fallback if transition doesn't fire
       setTimeout(handleHashScroll, 2000); 
     });
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("mainHeader");
+        header.classList.toggle("sticky", window.scrollY > 50);
+      });
     </script>
 </body>
 </html>

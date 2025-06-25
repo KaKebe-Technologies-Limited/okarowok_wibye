@@ -10779,13 +10779,19 @@ a.header__search.header-search-btn p {
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.09);
   padding: 24px;
   display: flex;
-  align-items: center;
-  margin-left: 40px;
+  align-items: center;/* 
+  margin-left: 40px; */
   transition: all 0.4s;
   margin-bottom: 20px;
 }
+@media(max-width:576px) {
+  .contact9 .contact9-content-area .contact9-box {
+    margin-left: 0px;
+  }
+}
 .contact9 .contact9-content-area .contact9-box .heading {
   padding-left: 20px;
+  text-wrap: wrap;
 }
 .contact9 .contact9-content-area .contact9-box .heading h5 {
   color: var(--Text-Color, #181818);
@@ -10807,8 +10813,8 @@ a.header__search.header-search-btn p {
 }
 .contact9 .contact9-content-area .contact9-box .icon {
   background-color: #325D28;
-  height: 80px;
-  width: 80px;
+  height: 80px !important;
+  width: 80px !important;
   line-height: 80px;
   text-align: center;
   border-radius: 50%;

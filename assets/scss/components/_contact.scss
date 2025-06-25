@@ -633,6 +633,11 @@
             margin-left: 40px;
             transition: all .4s;
             margin-bottom: 20px;
+
+            @media #{$md} {
+                margin-left: 0px;
+            }
+
             .heading {
                 padding-left: 20px;
                 h5 {
