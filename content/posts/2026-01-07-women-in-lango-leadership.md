@@ -1,0 +1,30 @@
+---
+title: "Women's Role in Conflict Resolution"
+slug: women-in-lango-leadership
+date: 2026-01-07
+author: Agnes Okello
+image: woman_leader.jpg
+excerpt: Exploring Okweomac principles through gender-inclusive peacebuilding approaches.
+tags: women, leadership, empowerment
+published: true
+---
+
+## Women as Pillars of Lango Society
+
+In the popular imagination, traditional African societies are often portrayed as rigidly patriarchal, with women confined to domestic roles and excluded from public life. The reality of Lango culture is considerably more nuanced. While formal leadership positions were historically held by men, women in Lango society have always exercised significant authority — as mothers, as mediators, as ritual specialists, and as the primary transmitters of cultural knowledge to the next generation. The Okarowok Wibye Acel clan's history is full of women whose wisdom and courage shaped the community's destiny.
+
+## Okweomac: The Principle of Reconciliation
+
+Central to the Lango approach to conflict resolution is the principle of *okweomac* — a word that encompasses reconciliation, the restoration of broken relationships, and the re-establishment of communal harmony after conflict. Women have traditionally been the primary practitioners of *okweomac*, serving as intermediaries between feuding families, as counsellors to aggrieved parties, and as the voices that remind combatants of their shared humanity and shared ancestry. In the Lango tradition, a woman who stands between two fighting men and spreads her hands is invoking a sacred prohibition — to continue fighting in her presence would be a profound violation of cultural law.
+
+## Women in the Post-Conflict Healing Process
+
+The LRA insurgency that devastated northern Uganda between the 1980s and 2000s left deep wounds in Lango communities. Families were separated, homesteads destroyed, and the social fabric torn by violence and displacement. In the aftermath, it was largely women who led the work of healing and reconstruction. Women's groups organised communal farming to restore food security; women elders performed the *gomo tong* (bending of the spear) ceremony that formally ended hostilities between communities; and women counsellors worked with returning child soldiers and abductees to reintegrate them into family and community life. The Okarowok clan's women were at the forefront of this work.
+
+## Formal Recognition in Clan Governance
+
+The Okarowok Wibye Acel clan has formalised women's leadership through the creation of a Women's Empowerment portfolio in the executive council and the establishment of a Women's Assembly that meets quarterly to discuss issues affecting women and girls in the clan. The Women's Assembly has the power to bring resolutions to the full executive council and to the annual clan assembly. This structure has given women a formal voice in decisions about land, education, marriage customs, and cultural practices — areas where their interests were not always adequately represented in the past.
+
+## Inspiring the Next Generation
+
+The clan's women leaders are conscious of their role as models for younger women and girls. Through mentorship programmes, girls' education bursaries, and public recognition of women's contributions at clan gatherings, the Okarowok clan is working to ensure that the next generation of women grows up knowing that leadership is their birthright as much as it is any man's. The stories of women who mediated conflicts, preserved cultural knowledge, and rebuilt communities after war are told alongside the stories of male chiefs and warriors — because the clan's history is incomplete without them.

@@ -1,0 +1,32 @@
+# Okarowok Wibye Acel — Blog URL Rewriting
+# Enables clean URLs for the flat-file blog system
+
+RewriteEngine On
+RewriteBase /
+
+# --- Blog Routes ---
+
+# /blog/page/2/ → blog/index.php?page=2
+RewriteRule ^blog/page/([0-9]+)/?$ blog/index.php?page=$1 [L,QSA]
+
+# /blog/some-post-slug/ → blog/post.php?slug=some-post-slug
+RewriteRule ^blog/([a-z0-9-]+)/?$ blog/post.php?slug=$1 [L,QSA]
+
+# /blog/ → blog/index.php
+RewriteRule ^blog/?$ blog/index.php [L,QSA]
+
+# --- Backward Compatibility ---
+
+# Redirect old blog.html to new /blog/ URL
+RewriteRule ^blog\.html$ /blog/ [R=301,L]
+
+# --- Security ---
+
+# Prevent direct access to Markdown content files
+RewriteRule ^content/ - [F,L]
+
+# Prevent direct access to cache directory
+RewriteRule ^cache/ - [F,L]
+
+# Prevent direct access to includes directory (except from PHP)
+RewriteRule ^includes/ - [F,L]
