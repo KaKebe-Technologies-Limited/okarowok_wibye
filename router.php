@@ -37,6 +37,31 @@ if ($path === 'blog' || $path === 'blog/') {
     exit;
 }
 
+// Admin routes
+// Route: /admin → admin/index.php (login page)
+if ($path === 'admin' || $path === 'admin/') {
+    include __DIR__ . '/admin/index.php';
+    exit;
+}
+
+// Route: /admin/dashboard → admin/dashboard.php
+if ($path === 'admin/dashboard') {
+    include __DIR__ . '/admin/dashboard.php';
+    exit;
+}
+
+// Route: /admin/post → admin/post.php (new post)
+if ($path === 'admin/post' || $path === 'admin/post/') {
+    include __DIR__ . '/admin/post.php';
+    exit;
+}
+
+// Route: /admin/process → admin/process.php (form handler)
+if ($path === 'admin/process' || $path === 'admin/process/') {
+    include __DIR__ . '/admin/process.php';
+    exit;
+}
+
 // Serve static files directly
 $file = __DIR__ . $requestUri;
 if (file_exists($file) && is_file($file)) {
