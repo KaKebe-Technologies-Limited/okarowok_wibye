@@ -106,4 +106,5 @@ if (file_exists($file) && is_file($file)) {
 
 // 404 for everything else
 http_response_code(404);
-echo "404 Not Found";
+include __DIR__ . '/404.php';
+exit;
