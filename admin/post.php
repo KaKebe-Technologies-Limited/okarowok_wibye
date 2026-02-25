@@ -220,6 +220,44 @@ $content = $post['body'] ?? '';
             color: #777;
             margin-top: 6px;
         }
+        .image-upload-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .image-preview {
+            width: 100%;
+            max-width: 300px;
+            min-height: 150px;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+        .image-preview img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .image-preview .placeholder {
+            text-align: center;
+            color: #999;
+            padding: 20px;
+        }
+        .image-preview .placeholder i {
+            font-size: 32px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .image-upload-wrapper .btn {
+            align-self: flex-start;
+        }
+        .image-upload-wrapper input[type="text"] {
+            background: #f8f9fa;
+        }
     </style>
 </head>
 <body>
@@ -267,9 +305,28 @@ $content = $post['body'] ?? '';
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="image">Image Filename</label>
-                        <input type="text" id="image" name="image" value="<?php echo htmlspecialchars($image); ?>" placeholder="e.g., my-image.jpg">
-                        <div class="help-text">Place images in /assets/img/blog/</div>
+                        <label for="image">Featured Image</label>
+                        <div class="image-upload-wrapper">
+                            <div class="image-preview" id="imagePreview">
+                                <?php if (!empty($image)): ?>
+                                    <img src="/assets/img/blog/<?php echo htmlspecialchars($image); ?>" alt="Preview" id="previewImg">
+                                <?php else: ?>
+                                    <div class="placeholder" id="imagePlaceholder">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Click or drag to upload</span>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <input type="file" id="imageFile" accept="image/jpeg,image/png,image/gif,image/webp" style="display: none;">
+                            <input type="text" id="image" name="image" value="<?php echo htmlspecialchars($image); ?>" placeholder="Image filename" readonly>
+                            <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('imageFile').click()">
+                                <i class="fas fa-upload"></i> Upload
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="insertImageInContent()">
+                                <i class="fas fa-image"></i> Insert in Content
+                            </button>
+                            <div class="help-text">Upload an image or enter filename manually</div>
+                        </div>
                     </div>
                     
                     <div class="form-group">
@@ -334,6 +391,72 @@ $content = $post['body'] ?? '';
         document.addEventListener('DOMContentLoaded', function() {
             updatePreview();
         });
+        
+        // Image upload handling
+        const imageFileInput = document.getElementById('imageFile');
+        const imageInput = document.getElementById('image');
+        const imagePreview = document.getElementById('imagePreview');
+
+        imageFileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            // Show loading state
+            const placeholder = document.getElementById('imagePlaceholder');
+            if (placeholder) {
+                placeholder.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
+            }
+            
+            const formData = new FormData();
+            formData.append('image', file);
+            
+            fetch('<?php echo ADMIN_PATH; ?>/upload.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Extract filename from URL
+                    const filename = data.url.split('/').pop();
+                    imageInput.value = filename;
+                    
+                    // Update preview
+                    imagePreview.innerHTML = '<img src="' + data.url + '" alt="Preview" id="previewImg">';
+                } else {
+                    alert('Upload failed: ' + data.error);
+                    // Restore placeholder
+                    imagePreview.innerHTML = '<div class="placeholder" id="imagePlaceholder"><i class="fas fa-cloud-upload-alt"></i><span>Click or drag to upload</span></div>';
+                }
+            })
+            .catch(error => {
+                alert('Upload error: ' + error);
+                imagePreview.innerHTML = '<div class="placeholder" id="imagePlaceholder"><i class="fas fa-cloud-upload-alt"></i><span>Click or drag to upload</span></div>';
+            });
+        });
+
+        function insertImageInContent() {
+            const filename = imageInput.value;
+            if (!filename) {
+                alert('Please upload an image first');
+                return;
+            }
+            
+            const imageUrl = '/assets/img/blog/' + filename;
+            const markdownImage = '![' + filename + '](' + imageUrl + ')';
+            
+            // Insert at cursor position in content textarea
+            const contentTextarea = document.getElementById('content');
+            const cursorPos = contentTextarea.selectionStart;
+            const textBefore = contentTextarea.value.substring(0, cursorPos);
+            const textAfter = contentTextarea.value.substring(cursorPos);
+            
+            contentTextarea.value = textBefore + '\n' + markdownImage + '\n' + textAfter;
+            contentTextarea.focus();
+            
+            // Update preview
+            updatePreview();
+        }
     </script>
 </body>
 </html>

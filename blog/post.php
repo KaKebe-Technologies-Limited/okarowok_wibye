@@ -62,7 +62,7 @@ if ($post === null) {
 }
 
 // Set page meta for header
-$pageTitle = htmlspecialchars($post['title']) . ' - Okarowok Wibye Acel Blog';
+$pageTitle = $post['title'] . ' - Okarowok Wibye Acel Blog';
 $pageDescription = htmlspecialchars($post['excerpt'] ?? '');
 $pageImage = '/assets/img/blog/' . htmlspecialchars($post['image'] ?? '');
 

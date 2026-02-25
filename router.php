@@ -10,6 +10,36 @@ $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 // Remove leading/trailing slashes
 $path = trim($requestUri, '/');
 
+// Route: /?$ → index.html
+if ($path === '' || $path === '/') {
+    include __DIR__ . '/index.html';
+    exit;
+}
+
+// Route: /about/?$ → about.html
+if ($path === 'about' || $path === 'about/') {
+    include __DIR__ . '/about.html';
+    exit;
+}
+
+// Route: /gallery/?$ → gallery.html
+if ($path === 'gallery' || $path === 'gallery/') {
+    include __DIR__ . '/gallery.html';
+    exit;
+}
+
+// Route: /activities/?$ → activities.html
+if ($path === 'activities' || $path === 'activities/') {
+    include __DIR__ . '/activities.html';
+    exit;
+}
+
+// Route: /project/?$ → project.html
+if ($path === 'project' || $path === 'project/') {
+    include __DIR__ . '/project.html';
+    exit;
+}
+
 // Route: /blog/page/([0-9]+)/?$ → blog/index.php?page=$1
 if (preg_match('#^blog/page/(\d+)/?$#', $path, $matches)) {
     $_GET['page'] = $matches[1];
@@ -59,6 +89,12 @@ if ($path === 'admin/post' || $path === 'admin/post/') {
 // Route: /admin/process → admin/process.php (form handler)
 if ($path === 'admin/process' || $path === 'admin/process/') {
     include __DIR__ . '/admin/process.php';
+    exit;
+}
+
+// Route: /admin/upload → admin/upload.php (image upload handler)
+if ($path === 'admin/upload' || $path === 'admin/upload/') {
+    include __DIR__ . '/admin/upload.php';
     exit;
 }
 
