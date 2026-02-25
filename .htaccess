@@ -1,8 +1,22 @@
-# Okarowok Wibye Acel — Blog URL Rewriting
-# Enables clean URLs for the flat-file blog system
+# Okarowok Wibye Acel — URL Rewriting
+# Enables clean URLs for the blog and other pages
 
 RewriteEngine On
 RewriteBase /
+
+# --- Page Routes ---
+
+# /about/ → about.html
+RewriteRule ^about/?$ about.html [L,QSA]
+
+# /gallery/ → gallery.html
+RewriteRule ^gallery/?$ gallery.html [L,QSA]
+
+# /activities/ → activities.html
+RewriteRule ^activities/?$ activities.html [L,QSA]
+
+# /project/ → project.html
+RewriteRule ^project/?$ project.html [L,QSA]
 
 # --- Blog Routes ---
 
@@ -19,6 +33,23 @@ RewriteRule ^blog/?$ blog/index.php [L,QSA]
 
 # Redirect old blog.html to new /blog/ URL
 RewriteRule ^blog\.html$ /blog/ [R=301,L]
+
+# --- Admin Routes ---
+
+# /admin/ → admin/index.php
+RewriteRule ^admin/?$ admin/index.php [L,QSA]
+
+# /admin/dashboard → admin/dashboard.php
+RewriteRule ^admin/dashboard/?$ admin/dashboard.php [L,QSA]
+
+# /admin/post → admin/post.php
+RewriteRule ^admin/post/?$ admin/post.php [L,QSA]
+
+# /admin/process → admin/process.php
+RewriteRule ^admin/process/?$ admin/process.php [L,QSA]
+
+# /admin/upload → admin/upload.php
+RewriteRule ^admin/upload/?$ admin/upload.php [L,QSA]
 
 # --- Security ---
 
