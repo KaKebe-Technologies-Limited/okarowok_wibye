@@ -17,23 +17,22 @@ if (!isset($_FILES['image']) || $_FILES['image']['error'] !== UPLOAD_ERR_OK) {
 
 $file = $_FILES['image'];
 
-$allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
-$finfo = finfo_open(FILEINFO_MIME_TYPE);
-$mimeType = finfo_file($finfo, $file['tmp_name']);
-finfo_close($finfo);
+// Validate file extension
+$allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+$ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
 
-if (!in_array($mimeType, $allowedTypes)) {
+if ($ext === 'jpeg') $ext = 'jpg';
+
+if (!in_array($ext, $allowedExtensions)) {
     echo json_encode(['success' => false, 'error' => 'Invalid file type. Allowed: JPG, PNG, GIF, WebP']);
     exit;
 }
 
+// Validate file size (5MB max)
 if ($file['size'] > 5 * 1024 * 1024) {
     echo json_encode(['success' => false, 'error' => 'File too large. Max size: 5MB']);
     exit;
 }
-
-$ext = pathinfo($file['name'], PATHINFO_EXTENSION);
-if ($ext === 'jpeg') $ext = 'jpg';
 
 $filename = time() . '-' . bin2hex(random_bytes(4)) . '.' . $ext;
 $uploadDir = __DIR__ . '/../assets/img/blog/';
