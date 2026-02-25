@@ -350,17 +350,17 @@ if (!isset($extraStyles)) $extraStyles = '';
           <div class="col-12">
             <div class="header-elements">
               <div class="site-logo">
-                <a href="/index.html" class="d-flex clan-name-logo text-center">
+                <a href="/" class="d-flex clan-name-logo text-center">
                   <img src="/assets/img/logo/rhino-head.png" alt="" class="logo-image">
                 </a>
               </div>
 
               <div class="main-menu-ex main-menu-ex1">
                 <ul>
-                  <li><a href="/index.html">Home</a></li>
-                  <li class="dropdown-menu-parrent"><a href="/about.html">About</a></li>
-                  <li class="dropdown-menu-parrent"><a href="/service.html">Activities</a></li>
-                  <li class="dropdown-menu-parrent"><a href="/gallery.html">Gallery</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li class="dropdown-menu-parrent"><a href="/about/">About</a></li>
+                  <li class="dropdown-menu-parrent"><a href="/activities/">Activities</a></li>
+                  <li class="dropdown-menu-parrent"><a href="/gallery/">Gallery</a></li>
                   <li class="dropdown-menu-parrent"><a href="/blog/">Blog</a></li>
                 </ul>
               </div>
@@ -376,7 +376,7 @@ if (!isset($extraStyles)) $extraStyles = '';
                   </div>
                 </div>
                 <div class="button">
-                  <a class="theme-btn1" href="/index.html#contact">Get in Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="theme-btn1" href="/#contact">Get in Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>
@@ -393,7 +393,7 @@ if (!isset($extraStyles)) $extraStyles = '';
       <div class="col-12">
         <div class="mobile-header-elements">
           <div class="mobile-logo">
-            <a href="/index.html" class="clan-name-logo-mobile">
+            <a href="/" class="clan-name-logo-mobile">
               <img src="/assets/img/logo/rhino-head.png" alt="" class="logo-image-mobile">
             </a>
           </div>
@@ -409,22 +409,22 @@ if (!isset($extraStyles)) $extraStyles = '';
 
   <div class="mobile-sidebar d-block d-lg-none">
     <div class="logo-m">
-      <a href="/index.html" class="clan-name-logo-mobile">Okarowok Wibye Acel</a>
+      <a href="/" class="clan-name-logo-mobile">Okarowok Wibye Acel</a>
     </div>
     <div class="menu-close">
       <i class="fa-solid fa-xmark"></i>
     </div>
     <div class="mobile-nav">
       <ul>
-        <li class="has-dropdown"><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li class="has-dropdown"><a href="/service.html">Activities</a></li>
-        <li class="has-dropdown"><a href="/gallery.html">Gallery</a></li>
+        <li class="has-dropdown"><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li class="has-dropdown"><a href="/activities/">Activities</a></li>
+        <li class="has-dropdown"><a href="/gallery/">Gallery</a></li>
         <li class="has-dropdown"><a href="/blog/">Blog</a></li>
       </ul>
 
       <div class="mobile-button">
-        <a class="menu-btn2" href="/index.html#contact">Get in Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        <a class="menu-btn2" href="/#contact">Get in Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
       </div>
 
       <div class="single-footer-items">

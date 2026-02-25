@@ -10,8 +10,7 @@
 require_once __DIR__ . '/parsedown/Parsedown.php';
 
 // Configuration constants
-define('POSTS_DIR', __DIR__ . '/../content/posts');
-define('CACHE_DIR', __DIR__ . '/../cache');
+require_once __DIR__ . '/../admin/config.php';
 define('POSTS_PER_PAGE', 6);
 
 /**

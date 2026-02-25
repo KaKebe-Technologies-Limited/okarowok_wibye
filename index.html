@@ -1,152 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Official portal of Okarowok Wibye Acel Clan - Preserving Lango cultural heritage since 1887. Explore our history, leadership structure, and community initiatives.">
-  <meta keywords="Lango clan, Ugandan heritage, cultural preservation, Oculi Abwango, clan totems">
-  <title>Okarowok Wibye Acel Clan - Cultural Heritage Guardians</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official portal of Okarowok Wibye Acel Clan - Preserving Lango cultural heritage since 1887. Explore our history, leadership structure, and community initiatives."
+    />
+    <meta
+      keywords="Lango clan, Ugandan heritage, cultural preservation, Oculi Abwango, clan totems"
+    />
+    <title>Okarowok Wibye Acel Clan - Cultural Heritage Guardians</title>
 
-  <!--=====FAVICON=======-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/logo/site.webmanifest">
+    <!--=====FAVICON=======-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/logo/site.webmanifest" />
 
-  <!--=====CSS=======-->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/fontawesome.css"/>
-  <link rel="stylesheet" href="assets/css/magnific-popup.css"/>
-  <link rel="stylesheet" href="assets/css/nice-select.css"/>
-  <link rel="stylesheet" href="assets/css/slick-slider.css"/>
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
-  <link rel="stylesheet" href="assets/css/swiper-bundle.css"/>
-  <link rel="stylesheet" href="assets/css/aos.css"/>
-  <link rel="stylesheet" href="assets/css/mobile-menu.css"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--=====CSS=======-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/nice-select.css" />
+    <link rel="stylesheet" href="/assets/css/slick-slider.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link rel="stylesheet" href="/assets/css/mobile-menu.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <style>
-    .image.image-anime, .bottom-area .image img {
-      border-radius: 5% !important;
-    }
+    <style>
+      .image.image-anime,
+      .bottom-area .image img {
+        border-radius: 5% !important;
+      }
 
-    .centered-table {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      table-layout: fixed; /* for fixed column ratios */
-    }
-
-    /* Center-align numeric columns in the table */
-    .centered-table td:first-child,
-    .centered-table th:first-child,
-    .centered-table td:nth-child(3),
-    .centered-table th:nth-child(3),
-    .centered-table td:nth-child(5),
-    .centered-table th:nth-child(5) {
-      text-align: center;
-    }
-
-    @media (max-width: 576px) {
       .centered-table {
-        margin-left: 0;
-        margin-right: 0;
-        min-width: min-content;
-        table-layout: auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed; /* for fixed column ratios */
       }
 
-      .marginal {
-        display: none;
+      /* Center-align numeric columns in the table */
+      .centered-table td:first-child,
+      .centered-table th:first-child,
+      .centered-table td:nth-child(3),
+      .centered-table th:nth-child(3),
+      .centered-table td:nth-child(5),
+      .centered-table th:nth-child(5) {
+        text-align: center;
       }
-    }
 
-    .col-1 { width: 10%; }
-    .col-2 { width: 20%; }
-    .col-3 { width: 20%; }
-    .col-4 { width: 20%; }
-    .col-5 { width: 20%; }
+      @media (max-width: 576px) {
+        .centered-table {
+          margin-left: 0;
+          margin-right: 0;
+          min-width: min-content;
+          table-layout: auto;
+        }
 
-    .table-active td:first-of-type { text-align: left; padding-left: 3%; }
-    .table-active td:nth-child(2) { text-align: center; }
+        .marginal {
+          display: none;
+        }
+      }
 
-/* Floating header initial state */
-#mainHeader {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
+      .col-1 {
+        width: 10%;
+      }
+      .col-2 {
+        width: 20%;
+      }
+      .col-3 {
+        width: 20%;
+      }
+      .col-4 {
+        width: 20%;
+      }
+      .col-5 {
+        width: 20%;
+      }
 
-/* Rounded container */
-.header-inner {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  background-color: white;
-  border-radius: 50px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  padding: 0.75rem 1rem;
-  transition: all 0.3s ease;
-}
+      .table-active td:first-of-type {
+        text-align: left;
+        padding-left: 3%;
+      }
+      .table-active td:nth-child(2) {
+        text-align: center;
+      }
 
-/* Logo */
-.logo-img {
-  max-height: 60px;
-  width: auto;
-}
+      /* Floating header initial state */
+      #mainHeader {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
 
-/* Nav link styling */
-.nav-links .nav-link {
-  padding: 0.5rem 1rem;
-  font-weight: 500;
-  color: #333;
-  text-transform: capitalize;
-}
+      /* Rounded container */
+      .header-inner {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        padding: 0.75rem 1rem;
+        transition: all 0.3s ease;
+      }
 
-.nav-links .nav-link:hover {
-  text-decoration: none;
-}
+      /* Logo */
+      .logo-img {
+        max-height: 60px;
+        width: auto;
+      }
 
-/* Sticky scroll effect */
-#mainHeader.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
-}
+      /* Nav link styling */
+      .nav-links .nav-link {
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        color: #333;
+        text-transform: capitalize;
+      }
 
-#mainHeader.sticky .header-inner {
-  width: 100%;
-  max-width: none;
-  border-radius: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
+      .nav-links .nav-link:hover {
+        text-decoration: none;
+      }
 
-  </style>
+      /* Sticky scroll effect */
+      #mainHeader.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+      }
 
-  <!--=====JQUERY=======-->
-  <script src="assets/js/jquery-3-7-1.min.js"></script>
-</head>
+      #mainHeader.sticky .header-inner {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
 
-<body class="body tg-heading-subheading animation-style3">
+    <!--=====JQUERY=======-->
+    <script src="/assets/js/jquery-3-7-1.min.js"></script>
+  </head>
 
-  <!--=====progress START=======-->
+  <body class="body tg-heading-subheading animation-style3">
+    <!--=====progress START=======-->
 
-  <div class="paginacontainer"> 
-
-    <div class="progress-wrap">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-      </svg>
+    <div class="paginacontainer">
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
     </div>
-  
-  </div> 
-  
-  <!--=====progress END=======-->
-  
-  <!-- Preloader START --><!-- 
+
+    <!--=====progress END=======-->
+
+    <!-- Preloader START --><!-- 
   <section>
     <div id="preloader">
       <div id="ctn-preloader" class="ctn-preloader ctn-preloader1">
@@ -184,617 +223,1029 @@
       </div>
     </div>
   </section> -->
-  <!-- Preloader END -->
+    <!-- Preloader END -->
 
-  <header id="mainHeader">
-    <div class="header-inner shadow">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex align-items-center justify-content-between">
-          
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="assets/img/logo/rhino-head.png" alt="Logo" class="logo-img me-2">
-          </a>
+    <header id="mainHeader">
+      <div class="header-inner shadow">
+        <nav class="navbar navbar-expand-lg">
+          <div
+            class="container d-flex align-items-center justify-content-between"
+          >
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/">
+              <img
+                src="/assets/img/logo/rhino-head.png"
+                alt="Logo"
+                class="logo-img me-2"
+              />
+            </a>
 
-          <!-- Desktop Nav (only visible on large screens) -->
-          <ul class="navbar-nav nav-links d-none d-lg-flex justify-content-center flex-grow-1 gap-4">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="service.html">Activities</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          </ul>
+            <!-- Desktop Nav (only visible on large screens) -->
+            <ul
+              class="navbar-nav nav-links d-none d-lg-flex justify-content-center flex-grow-1 gap-4"
+            >
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/activities/">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery/">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/">Blog</a>
+              </li>
+            </ul>
 
-          <!-- Desktop CTA -->
-          <a class="theme-btn16 d-none d-lg-block" href="index.html#contact">Get in Touch <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a>
+            <!-- Desktop CTA -->
+            <a class="theme-btn16 d-none d-lg-block" href="/#contact"
+              >Get in Touch
+              <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span
+              ><span class="arrow2"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
 
-          <!-- Mobile Toggle -->
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <!-- Mobile Nav: Only visible below lg -->
-        <div class="collapse d-lg-none w-100" id="mobileNav">
-          <ul class="navbar-nav mt-3 justify-content-center align-items-center text-center mx-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="service.html">Activities</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="theme-btn16 mt-2" href="index.html#contact">Get in Touch ↗</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-
-  <!--=====HERO AREA START=======-->
-  <div class="hero9" style="background-image: url(assets/img/bg/hero9-bg.jpg);">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-3">
-          <div class="main-image1">
-            <img src="assets/img/hero/hero1.jpg" alt="Clan Emblem"/>
+            <!-- Mobile Toggle -->
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-        </div>
-        <div class="col-12 col-md-10 col-lg-6 mx-auto text-center px-3">
-          <div class="main-heading">
-            <span class="span d-inline-block mb-2" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Okarowok Wibye Acel Clan
-            </span>
-            <h1 class="tg-element-title fs-4 fs-md-3 fs-lg-2">
-              Propagating Cultural, Social, and Ecological Safety
-            </h1>
-            <p id="hero-p" class="lead">
-              Engaging oral culture and indigenous knowledge to defend and promote human rights, social inclusion, climate justice, and peace building for a sustainable future.
-            </p>
-          </div>
-        </div>
 
-        <div class="col-lg-3">
-          <div class="main-image2">
-            <img src="assets/img/hero/hero2.jpg" alt="Clan Gathering"/>
+          <!-- Mobile Nav: Only visible below lg -->
+          <div class="collapse d-lg-none w-100" id="mobileNav">
+            <ul
+              class="navbar-nav mt-3 justify-content-center align-items-center text-center mx-auto"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/activities/">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery/">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="theme-btn16 mt-2" href="/#contact">Get in Touch ↗</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--=====HERO AREA START=======-->
+    <div
+      class="hero9"
+      style="background-image: url(assets/img/bg/hero9-bg.jpg)"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="main-image1">
+              <img src="/assets/img/hero/hero1.jpg" alt="Clan Emblem" />
+            </div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-6 mx-auto text-center px-3">
+            <div class="main-heading">
+              <span
+                class="span d-inline-block mb-2"
+                data-aos="zoom-in-left"
+                data-aos-duration="700"
+              >
+                <img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Okarowok Wibye Acel Clan
+              </span>
+              <h1 class="tg-element-title fs-4 fs-md-3 fs-lg-2">
+                Propagating Cultural, Social, and Ecological Safety
+              </h1>
+              <p id="hero-p" class="lead">
+                Engaging oral culture and indigenous knowledge to defend and
+                promote human rights, social inclusion, climate justice, and
+                peace building for a sustainable future.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="main-image2">
+              <img src="/assets/img/hero/hero2.jpg" alt="Clan Gathering" />
+            </div>
           </div>
         </div>
       </div>
+      <div class="hero9-arrow">
+        <a href="#about"
+          ><img src="/assets/img/shapes/hero9-arrow.png" alt="Scroll down"
+        /></a>
+      </div>
     </div>
-    <div class="hero9-arrow">
-      <a href="#about"><img src="assets/img/shapes/hero9-arrow.png" alt="Scroll down"/></a>
-    </div>
-  </div>
-  <!--=====HERO AREA END=======-->
+    <!--=====HERO AREA END=======-->
 
-  <div class="space60"></div>
+    <div class="space60"></div>
 
-  <!--=====ABOUT AREA START=======-->
-  <div class="about9 sp" id="about">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5">
-          <div class="heading9">
-            <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> About the Clan
-            </span>
-            <h2 class="tg-element-title">Our Vision, Mission &amp; Core Values</h2>
-            <div class="space16"></div>
-            <h6><strong>Vision:</strong></h6>
-            <p>To become a leading agency in the propagation of cultural, social, and ecological safety of material and non-material heritage.</p>
-            <h6><strong>Mission:</strong></h6>
-            <p>Engaging oral culture and indigenous knowledge to defend and promote human rights, social inclusion, climate justice, and peace building for a sustainable future.</p>
-            <!-- <div class="space30"></div> -->
-            <h6><strong>Core Values:</strong></h6>
-            <ul class="corevalues">
+    <!--=====ABOUT AREA START=======-->
+    <div class="about9 sp" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="heading9">
+              <span
+                class="span"
+                data-aos="zoom-in-left"
+                data-aos-duration="700"
+              >
+                <img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                About the Clan
+              </span>
+              <h2 class="tg-element-title">
+                Our Vision, Mission &amp; Core Values
+              </h2>
+              <div class="space16"></div>
+              <h6><strong>Vision:</strong></h6>
+              <p>
+                To become a leading agency in the propagation of cultural,
+                social, and ecological safety of material and non-material
+                heritage.
+              </p>
+              <h6><strong>Mission:</strong></h6>
+              <p>
+                Engaging oral culture and indigenous knowledge to defend and
+                promote human rights, social inclusion, climate justice, and
+                peace building for a sustainable future.
+              </p>
+              <!-- <div class="space30"></div> -->
+              <h6><strong>Core Values:</strong></h6>
+              <ul class="corevalues">
                 <li>Excellence (Adwoggi owok)</li>
                 <li>Godliness (Ŋeyo kede lworo Obaŋa)</li>
                 <li>Patriotism (Maro Atekere kede Lobo Uganda)</li>
                 <li>Hardwork (Tic Atek)</li>
-            </ul>
-            <h6><strong>Principles of Work and Membership Ethics:</strong></h6>
-            <ul class="list-unstyled">
-              <li><p><strong>Ojalokome:</strong> Sacrificing one’s resources to serve the clan</p></li>
-              <li><p><strong>Okweomac:</strong> Peace-building and conflict resolution</p></li>
-              <li><p><strong>Ojobolwak:</strong> Unity and collective success</p></li>
-            </ul>
+              </ul>
+              <h6>
+                <strong>Principles of Work and Membership Ethics:</strong>
+              </h6>
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <strong>Ojalokome:</strong> Sacrificing one’s resources to
+                    serve the clan
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Okweomac:</strong> Peace-building and conflict
+                    resolution
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Ojobolwak:</strong> Unity and collective success
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-7">
+          <div class="col-lg-7">
             <div class="cs_case_study_1_list">
-                <div class="cs_case_study cs_style_1 cs_hover_active active">
-                  <a href="#" class="cs_case_study_thumb cs_bg_filed"></a>
-                </div>
-                <div class="cs_case_study cs_style_1 cs_hover_active">
-                  <a href="#" class="cs_case_study_thumb cs_case_study_thumb2 cs_bg_filed"></a>
-                </div>
-                <div class="cs_case_study cs_style_1 cs_hover_active">
-                  <a href="#" class="cs_case_study_thumb cs_case_study_thumb3 cs_bg_filed"></a>
-                </div>
+              <div class="cs_case_study cs_style_1 cs_hover_active active">
+                <a href="#" class="cs_case_study_thumb cs_bg_filed"></a>
+              </div>
+              <div class="cs_case_study cs_style_1 cs_hover_active">
+                <a
+                  href="#"
+                  class="cs_case_study_thumb cs_case_study_thumb2 cs_bg_filed"
+                ></a>
+              </div>
+              <div class="cs_case_study cs_style_1 cs_hover_active">
+                <a
+                  href="#"
+                  class="cs_case_study_thumb cs_case_study_thumb3 cs_bg_filed"
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--=====ABOUT AREA END=======-->
+    <!--=====ABOUT AREA END=======-->
 
-  <!--=====TESTIMONIAL AREA START=======-->
-  <div class="tes9 sp">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 m-auto text-center">
-          <div class="heading9">
-            <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Our Voices
-            </span>
-            <h2 class="tg-element-title">Testimonials from Clan Members</h2>
-          </div>
-        </div>
-      </div>
-      <div class="space60"></div>
-      <div class="tes9-slider" data-aos="fade-up" data-aos-duration="100">
-        <!-- Slide 1 -->
-        <div class="sginle-slider">
-          <div class="qute"><img src="assets/img/icons/qute9.png" alt="Quote"/></div>
-          <p>“Joining the Organogram meetings rekindled my pride in our shared heritage. We stand stronger together.”</p>
-          <div class="border-tes"></div>
-          <div class="bottom-area">
-            <div class="image"><img src="assets/img/team/laury_small.jpg" alt="Dr Laury L Ocen"/></div>
-            <div class="heading">
-              <h4><a href="#">Dr Laury L Ocen</a></h4>
-              <p>Awitong (Clan Leader)</p>
+    <!--=====TESTIMONIAL AREA START=======-->
+    <div class="tes9 sp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <div class="heading9">
+              <span
+                class="span"
+                data-aos="zoom-in-left"
+                data-aos-duration="700"
+              >
+                <img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Our Voices
+              </span>
+              <h2 class="tg-element-title">Testimonials from Clan Members</h2>
             </div>
           </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="sginle-slider">
-          <div class="qute"><img src="assets/img/icons/qute9.png" alt="Quote"/></div>
-          <p>“Our Youth Rallies united the next generation—celebrating culture while empowering tomorrow’s leaders.”</p>
-          <div class="border-tes"></div>
-          <div class="bottom-area">
-            <div class="image"><img src="assets/img/team/bonny_small.jpg" alt="Otucu Bonny"/></div>
-            <div class="heading">
-              <h4><a href="#">Otucu Bonny</a></h4>
-              <p>Minister of Information and Computer Technology</p>
+        <div class="space60"></div>
+        <div class="tes9-slider" data-aos="fade-up" data-aos-duration="100">
+          <!-- Slide 1 -->
+          <div class="single-slider">
+            <div class="qute">
+              <img src="/assets/img/icons/qute9.png" alt="Quote" />
+            </div>
+            <p>
+              “Joining the Organogram meetings rekindled my pride in our shared
+              heritage. We stand stronger together.”
+            </p>
+            <div class="border-tes"></div>
+            <div class="bottom-area">
+              <div class="image">
+                <img
+                  src="/assets/img/team/laury_small.jpg"
+                  alt="Dr Laury L Ocen"
+                />
+              </div>
+              <div class="heading">
+                <h4><a href="#">Dr Laury L Ocen</a></h4>
+                <p>Awitong (Clan Leader)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="single-slider">
+            <div class="qute">
+              <img src="/assets/img/icons/qute9.png" alt="Quote" />
+            </div>
+            <p>
+              “Our Youth Rallies united the next generation—celebrating culture
+              while empowering tomorrow’s leaders.”
+            </p>
+            <div class="border-tes"></div>
+            <div class="bottom-area">
+              <div class="image">
+                <img src="/assets/img/team/bonny_small.jpg" alt="Otucu Bonny" />
+              </div>
+              <div class="heading">
+                <h4><a href="#">Otucu Bonny</a></h4>
+                <p>Minister of Information and Computer Technology</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="single-slider">
+            <div class="qute">
+              <img src="/assets/img/icons/qute9.png" alt="Quote" />
+            </div>
+            <p>
+              “Since we began our cultural centre fundraising, every chiefdom
+              has stepped forward in generosity and unity.”
+            </p>
+            <div class="border-tes"></div>
+            <div class="bottom-area">
+              <div class="image">
+                <img
+                  src="/assets/img/team/gad_small.jpg"
+                  alt="Gad Benson Obua"
+                />
+              </div>
+              <div class="heading">
+                <h4><a href="#">Obua Guard Benson</a></h4>
+                <p>Aryontong I</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Slide 3 -->
-        <div class="sginle-slider">
-          <div class="qute"><img src="assets/img/icons/qute9.png" alt="Quote"/></div>
-          <p>“Since we began our cultural centre fundraising, every chiefdom has stepped forward in generosity and unity.”</p>
-          <div class="border-tes"></div>
-          <div class="bottom-area">
-            <div class="image"><img src="assets/img/team/gad_small.jpg" alt="Gad Benson Obua"/></div>
-            <div class="heading">
-              <h4><a href="#">Obua Guard Benson</a></h4>
-              <p>Aryontong I</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="arrows-button">
-        <button class="tes9-next-arrow"><i class="fa-solid fa-angle-left"></i></button>
-        <button class="tes9-prev-arrow"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </div>
-  </div>
-  <!--=====TESTIMONIAL AREA END=======-->
-
-  <!--=====TEAM AREA START=======-->
-  <div class="team9 sp bg9">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 m-auto text-center">
-          <div class="heading9">
-            <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-              <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Clan Cabinet
-            </span>
-            <h2 class="tg-element-title">Meet Our Leadership</h2>
-          </div>
-        </div>
-      </div>
-      <div class="space30"></div>
-      <div class="row">
-        <!-- Cabinet Member 1 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1100">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/laury.jpg" alt="Dr Laury L Ocen"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Dr Laury L Ocen</a></h4>
-              <p>Awitong (Clan Leader)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 2 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="900">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/leader02.jpg" alt="Jacqueline Ocen"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Jacqueline Ocen</a></h4>
-              <p>Elwor of Clan</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 3 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/gad.jpg" alt="Obua Guard Benson"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Obua Guard Benson</a></h4>
-              <p>	Aryongtong I</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 4 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/geoffrey1.jpg" alt="Geoffrey Otim"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Geoffrey Otim</a></h4>
-              <p>Minister of Gender and Social Inclusion</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 5 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/janet.jpg" alt="Janet Okello Anyeki"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Janet Okello Anyeki</a></h4>
-              <p>Minister of Women's Affairs</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 6 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/aula.jpg" alt="Aula Maxwell Mark"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Aula Maxwell Mark</a></h4>
-              <p>Minister of Inspection and Systems' Audit</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 7 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/bonny.jpg" alt="Otucu Bonny"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Otucu Bonny</a></h4>
-              <p>Minister of Information and Computer Technology</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 8 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/bob.jpg" alt="Dr Bob Opio"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Dr Bob Opio</a></h4>
-              <p>Minister of Health</p>
-            </div>
-          </div>
-        </div>
-        <!-- Cabinet Member 9 -->
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
-          <div class="team-box">
-            <div class="image image-anime"><img src="assets/img/team/angulu.jpg" alt="Patrick Okwir Angulu"/></div>
-            <div class="heading-area">
-              <h4><a href="#">Patrick Okwir Angulu</a></h4>
-              <p>Minister of External Relations and Diplomacy</p>
-            </div>
-          </div>
-        </div>
-        <!-- add more cabinet members as needed -->
-        <div class="button-area text-center" id="leadbutton">
-          <button type="button" class="theme-btn16"><a href="about.html#leadership">Learn More <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></a></button>
+        <div class="arrows-button">
+          <button class="tes9-next-arrow">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button class="tes9-prev-arrow">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  <!--=====TEAM AREA END=======-->
+    <!--=====TESTIMONIAL AREA END=======-->
 
-<!--=====GOVERNANCE HIERARCHY START=======-->
-<div class="governance-hierarchy sp">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 m-auto text-center">
-        <div class="heading9">
-          <span class="span" data-aos="zoom-in-left" data-aos-duration="700">
-            <img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Structure
-          </span>
-          <h2 class="tg-element-title">Governance Hierarchy</h2>
-          <p class="mt-3">Our 8-tier leadership model ensures effective clan management</p>
+    <!--=====TEAM AREA START=======-->
+    <div class="team9 sp bg9">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <div class="heading9">
+              <span
+                class="span"
+                data-aos="zoom-in-left"
+                data-aos-duration="700"
+              >
+                <img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Clan Cabinet
+              </span>
+              <h2 class="tg-element-title">Meet Our Leadership</h2>
+            </div>
+          </div>
+        </div>
+        <div class="space30"></div>
+        <div class="row">
+          <!-- Cabinet Member 1 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1100"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/laury.jpg" alt="Dr Laury L Ocen" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Dr Laury L Ocen</a></h4>
+                <p>Awitong (Clan Leader)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="900"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img
+                  src="/assets/img/team/leader02.jpg"
+                  alt="Jacqueline Ocen"
+                />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Jacqueline Ocen</a></h4>
+                <p>Elwor of Clan</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/gad.jpg" alt="Obua Guard Benson" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Obua Guard Benson</a></h4>
+                <p>Aryongtong I</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 4 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/geoffrey1.jpg" alt="Geoffrey Otim" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Geoffrey Otim</a></h4>
+                <p>Minister of Gender and Social Inclusion</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 5 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img
+                  src="/assets/img/team/janet.jpg"
+                  alt="Janet Okello Anyeki"
+                />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Janet Okello Anyeki</a></h4>
+                <p>Minister of Women's Affairs</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 6 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/aula.jpg" alt="Aula Maxwell Mark" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Aula Maxwell Mark</a></h4>
+                <p>Minister of Inspection and Systems' Audit</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 7 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/bonny.jpg" alt="Otucu Bonny" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Otucu Bonny</a></h4>
+                <p>Minister of Information and Computer Technology</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 8 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img src="/assets/img/team/bob.jpg" alt="Dr Bob Opio" />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Dr Bob Opio</a></h4>
+                <p>Minister of Health</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cabinet Member 9 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="700"
+          >
+            <div class="team-box">
+              <div class="image image-anime">
+                <img
+                  src="/assets/img/team/angulu.jpg"
+                  alt="Patrick Okwir Angulu"
+                />
+              </div>
+              <div class="heading-area">
+                <h4><a href="#">Patrick Okwir Angulu</a></h4>
+                <p>Minister of External Relations and Diplomacy</p>
+              </div>
+            </div>
+          </div>
+          <!-- add more cabinet members as needed -->
+          <div class="button-area text-center" id="leadbutton">
+            <button type="button" class="theme-btn16">
+              <a href="/about#leadership"
+                >Learn More
+                <span class="arrow1"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+                ><span class="arrow2"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <!--=====TEAM AREA END=======-->
 
-    <div class="space30"></div>
-
-    <div class="hierarchy-flow">
-      <!-- Level 1 -->
-      <div class="hierarchy-level" data-aos="fade-up">
-        <div class="hierarchy-node primary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-users-between-lines"></i>
+    <!--=====GOVERNANCE HIERARCHY START=======-->
+    <div class="governance-hierarchy sp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 m-auto text-center">
+            <div class="heading9">
+              <span
+                class="span"
+                data-aos="zoom-in-left"
+                data-aos-duration="700"
+              >
+                <img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Structure
+              </span>
+              <h2 class="tg-element-title">Governance Hierarchy</h2>
+              <p class="mt-3">
+                Our 8-tier leadership model ensures effective clan management
+              </p>
+            </div>
           </div>
-          <h4>General Assembly</h4>
-          <p>All leaders including Awitong, Ministers, Chiefs, and Executives</p>
         </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
+        <div class="space30"></div>
 
-      <!-- Level 2 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="50">
-        <div class="hierarchy-node secondary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-people-group"></i>
+        <div class="hierarchy-flow">
+          <!-- Level 1 -->
+          <div class="hierarchy-level" data-aos="fade-up">
+            <div class="hierarchy-node primary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-users-between-lines"></i>
+              </div>
+              <h4>General Assembly</h4>
+              <p>
+                All leaders including Awitong, Ministers, Chiefs, and Executives
+              </p>
+            </div>
           </div>
-          <h4>Council</h4>
-          <p>Awitong, Speaker, Ministers, Advisers, and Executive Heads</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 3 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="100">
-        <div class="hierarchy-node tertiary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-people-roof"></i>
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
           </div>
-          <h4>Executive Committee</h4>
-          <p>Awitong and Ministers</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 4 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="150">
-        <div class="hierarchy-node quaternary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-people-arrows"></i>
+          <!-- Level 2 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="50">
+            <div class="hierarchy-node secondary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h4>Council</h4>
+              <p>Awitong, Speaker, Ministers, Advisers, and Executive Heads</p>
+            </div>
           </div>
-          <h4>Women & Youth Leadership</h4>
-          <p>16-member Executives at Awitong level</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 5 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="200">
-        <div class="hierarchy-node quinary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-crown"></i>
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
           </div>
-          <h4>Chiefdom</h4>
-          <p>Rwode with 23-member Executives</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 6 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="250">
-        <div class="hierarchy-node senary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-user-tie"></i>
+          <!-- Level 3 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="100">
+            <div class="hierarchy-node tertiary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-people-roof"></i>
+              </div>
+              <h4>Executive Committee</h4>
+              <p>Awitong and Ministers</p>
+            </div>
           </div>
-          <h4>Sub Chiefdom</h4>
-          <p>Sub Chiefs with 23-member Executives</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 7 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="300">
-        <div class="hierarchy-node septenary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-users-line"></i>
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
           </div>
-          <h4>Amur</h4>
-          <p>Sub Chiefdom Executives</p>
-        </div>
-      </div>
 
-      <div class="hierarchy-connector">
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-
-      <!-- Level 8 -->
-      <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="350">
-        <div class="hierarchy-node octonary-node">
-          <div class="hierarchy-icon">
-            <i class="fa-solid fa-house-user"></i>
+          <!-- Level 4 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="150">
+            <div class="hierarchy-node quaternary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-people-arrows"></i>
+              </div>
+              <h4>Women & Youth Leadership</h4>
+              <p>16-member Executives at Awitong level</p>
+            </div>
           </div>
-          <h4>Household</h4>
-          <p>Family units headed by Father and Mother</p>
+
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <!-- Level 5 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="200">
+            <div class="hierarchy-node quinary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <h4>Chiefdom</h4>
+              <p>Rwode with 23-member Executives</p>
+            </div>
+          </div>
+
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <!-- Level 6 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="250">
+            <div class="hierarchy-node senary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <h4>Sub Chiefdom</h4>
+              <p>Sub Chiefs with 23-member Executives</p>
+            </div>
+          </div>
+
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <!-- Level 7 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="300">
+            <div class="hierarchy-node septenary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-users-line"></i>
+              </div>
+              <h4>Amur</h4>
+              <p>Sub Chiefdom Executives</p>
+            </div>
+          </div>
+
+          <div class="hierarchy-connector">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <!-- Level 8 -->
+          <div class="hierarchy-level" data-aos="fade-up" data-aos-delay="350">
+            <div class="hierarchy-node octonary-node">
+              <div class="hierarchy-icon">
+                <i class="fa-solid fa-house-user"></i>
+              </div>
+              <h4>Household</h4>
+              <p>Family units headed by Father and Mother</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!--=====GOVERNANCE HIERARCHY END=======-->
+    <!--=====GOVERNANCE HIERARCHY END=======-->
 
-  <!--=====CHIEFDOM POPULATION START=======-->
-  <div class="works9 sp bg9">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 m-auto text-center">
-          <div class="heading9">
-            <span class="span"><img src="assets/img/icons/span9.svg" width="20" height="20" alt=""/> Chiefdoms</span>
-            <h2 class="tg-element-title">Population of Adult Members (18+)</h2>
+    <!--=====CHIEFDOM POPULATION START=======-->
+    <div class="works9 sp bg9">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <div class="heading9">
+              <span class="span"
+                ><img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Chiefdoms</span
+              >
+              <h2 class="tg-element-title">
+                Population of Adult Members (18+)
+              </h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="space30"></div>
-      <div class="table-responsive">
-        <table class="table table-bordered centered-table">
-          <colgroup>
-            <col class="col-1">
-            <col class="col-2">
-            <col class="col-3">
-            <col class="col-4">
-            <col class="col-5">
-          </colgroup>
-          <thead>
-            <tr>
-              <th>No.</th><th>Chiefdom</th><th>District</th><th>Chief</th><th>Pop.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Akalo (HQ)</td><td>Kole</td><td>Aloncio Eling</td><td>2000</td></tr>
-            <tr><td>2</td><td>Anyeke Atidi</td><td>Oyam</td><td>Francis Okello Amuko</td><td>4000</td></tr>
-            <tr><td>3</td><td>Anyeke Adwong</td><td>Oyam</td><td>Apil Nyamtum</td><td>5000</td></tr>
-            <tr><td>4</td><td>Erute Imalu</td><td>Lira</td><td>Nicholas Odur</td><td>3000</td></tr>
-            <tr><td>5</td><td>Erute Iping</td><td>Lira</td><td>—</td><td>4000</td></tr>
-            <tr><td>6</td><td>Inomo Chegere</td><td>Kwania</td><td>Paul Okao</td><td>3000</td></tr>
-            <tr><td>7</td><td>Inomo Kwania</td><td>Kwania</td><td>Peter Okello</td><td>3500</td></tr>
-            <tr><td>8</td><td>Chawente</td><td>Kwania</td><td>Patrick Alele</td><td>3500</td></tr>
-            <tr><td>9</td><td>Abongomola</td><td>Kwania</td><td>Venice Okol</td><td>3000</td></tr>
-            <tr><td>10</td><td>Amolatar East</td><td>Amolatar</td><td>Okao</td><td>2500</td></tr>
-            <tr><td>11</td><td>Amolatar West</td><td>Amolatar</td><td>—</td><td>2600</td></tr>
-            <tr><td>12</td><td>Dokolo</td><td>Dokolo</td><td>Walter Nyang</td><td>3000</td></tr>
-            <tr><td>13</td><td>Alebtong/Amuria</td><td>Alebtong</td><td>William Opio</td><td>1500</td></tr>
-            <tr><td>14</td><td>Aboke</td><td>Kole</td><td>Denis Ocen</td><td>5000</td></tr>
-            <tr><td>15</td><td>Okar Ibar</td><td>Kole</td><td>Tony Nam</td><td>2000</td></tr>
-            <tr><td>16</td><td>Otwal</td><td>Oyam</td><td>Bosco Otodi</td><td>2000</td></tr>
-            <tr><td>17</td><td>Parkline</td><td>Oyam</td><td>Jimmy Ocen</td><td>1700</td></tr>
-            <tr><td>18</td><td>Apac</td><td>Apac</td><td>Sam Odongo</td><td>1500</td></tr>
-            <tr><td>19</td><td>Loro</td><td>Oyam</td><td>Cons Ojuka</td><td>3000</td></tr>
-            <tr><td>20</td><td>Okwerodot</td><td>Kole</td><td>Simon Ogolo</td><td>300</td></tr>
-            <tr><td>21</td><td>Maruji</td><td>Apac</td><td>Willy Chong</td><td>1200</td></tr>
-            <tr><td>22</td><td>Lira City</td><td>Lira City</td><td>George Oculi</td><td>1000</td></tr>
-            <tr><td>23</td><td>Acholi/Gulu City</td><td>Gulu</td><td>Patrick</td><td>—</td></tr>
-            <tr><td>24</td><td>Kampala Metropolitan</td><td>Kampala</td><td>Sam Onek</td><td>500</td></tr>
-            <tr class="table-active"><td colspan="4"><strong>Total</strong></td><td><strong>56,000</strong></td></tr>
-          </tbody>
-        </table>
+        <div class="space30"></div>
+        <div class="table-responsive">
+          <table class="table table-bordered centered-table">
+            <colgroup>
+              <col class="col-1" />
+              <col class="col-2" />
+              <col class="col-3" />
+              <col class="col-4" />
+              <col class="col-5" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Chiefdom</th>
+                <th>District</th>
+                <th>Chief</th>
+                <th>Pop.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Akalo (HQ)</td>
+                <td>Kole</td>
+                <td>Aloncio Eling</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Anyeke Atidi</td>
+                <td>Oyam</td>
+                <td>Francis Okello Amuko</td>
+                <td>4000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Anyeke Adwong</td>
+                <td>Oyam</td>
+                <td>Apil Nyamtum</td>
+                <td>5000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Erute Imalu</td>
+                <td>Lira</td>
+                <td>Nicholas Odur</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Erute Iping</td>
+                <td>Lira</td>
+                <td>—</td>
+                <td>4000</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Inomo Chegere</td>
+                <td>Kwania</td>
+                <td>Paul Okao</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Inomo Kwania</td>
+                <td>Kwania</td>
+                <td>Peter Okello</td>
+                <td>3500</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Chawente</td>
+                <td>Kwania</td>
+                <td>Patrick Alele</td>
+                <td>3500</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Abongomola</td>
+                <td>Kwania</td>
+                <td>Venice Okol</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Amolatar East</td>
+                <td>Amolatar</td>
+                <td>Okao</td>
+                <td>2500</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Amolatar West</td>
+                <td>Amolatar</td>
+                <td>—</td>
+                <td>2600</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Dokolo</td>
+                <td>Dokolo</td>
+                <td>Walter Nyang</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Alebtong/Amuria</td>
+                <td>Alebtong</td>
+                <td>William Opio</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Aboke</td>
+                <td>Kole</td>
+                <td>Denis Ocen</td>
+                <td>5000</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Okar Ibar</td>
+                <td>Kole</td>
+                <td>Tony Nam</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Otwal</td>
+                <td>Oyam</td>
+                <td>Bosco Otodi</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Parkline</td>
+                <td>Oyam</td>
+                <td>Jimmy Ocen</td>
+                <td>1700</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Apac</td>
+                <td>Apac</td>
+                <td>Sam Odongo</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Loro</td>
+                <td>Oyam</td>
+                <td>Cons Ojuka</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Okwerodot</td>
+                <td>Kole</td>
+                <td>Simon Ogolo</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Maruji</td>
+                <td>Apac</td>
+                <td>Willy Chong</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>Lira City</td>
+                <td>Lira City</td>
+                <td>George Oculi</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>Acholi/Gulu City</td>
+                <td>Gulu</td>
+                <td>Patrick</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Kampala Metropolitan</td>
+                <td>Kampala</td>
+                <td>Sam Onek</td>
+                <td>500</td>
+              </tr>
+              <tr class="table-active">
+                <td colspan="4"><strong>Total</strong></td>
+                <td><strong>56,000</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <!--=====CHIEFDOM POPULATION END=======-->
+    <!--=====CHIEFDOM POPULATION END=======-->
 
     <!--=====CONTACT AREA START=======-->
 
     <div class="contact9 bg9 sp" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 m-auto text-center">
-                    <div class="heading9">
-                        <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><img src="assets/img/icons/span9.svg" width="20" height="20" alt=""> Contact Us</span>
-                        <h2 class="tg-element-title">Let's Start the Conversation</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <div class="heading9">
+              <span class="span" data-aos="zoom-in-left" data-aos-duration="700"
+                ><img
+                  src="/assets/img/icons/span9.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                Contact Us</span
+              >
+              <h2 class="tg-element-title">Let's Start the Conversation</h2>
             </div>
-
-            <div class="contact9-content-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="form-area">
-                            <h3>Send Us A Message</h3>
-                            <div class="space16"></div>
-                            <p>Our response time is within 30 minutes during business hours</p>
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="number" placeholder="Phone Number">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="email" placeholder="Email Address">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="Service Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="single-input">
-                                            <textarea rows="4" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="button-area">
-                                            <button type="button" class="theme-btn16">Submit Now <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="" data-aos="fade-left" data-aos-duration="700">
-                            <div class="contact9-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact9-icon1.svg" alt="">
-                            </div>
-                            <div class="heading">
-                                <h5>Our Location</h5>
-                                <a href="#">Bardok Oculi Cell<br>Western Ward B<br>Akalo Sub County<br>Kole District<br>Lango Sub Region</a>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="" data-aos="fade-left" data-aos-duration="900">
-                            <div class="contact9-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact9-icon2.svg" alt="">
-                            </div>
-                            <div class="heading">
-                                <h5>Call Or Text</h5>
-                                <a href="tel:+256772614436">+256 772 614436</a>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="" data-aos="fade-left" data-aos-duration="1100">
-                            <div class="contact9-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact9-icon3.svg" alt="">
-                            </div>
-                            <div class="heading">
-                                <h5>Email Us Today</h5>
-                                <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
-                            </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="contact9-content-area">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="form-area">
+                <h3>Send Us A Message</h3>
+                <div class="space16"></div>
+                <p>
+                  Our response time is within 30 minutes during business hours
+                </p>
+                <form action="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="single-input">
+                        <input type="text" placeholder="First Name" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="single-input">
+                        <input type="text" placeholder="Last Name" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="single-input">
+                        <input type="number" placeholder="Phone Number" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="single-input">
+                        <input type="email" placeholder="Email Address" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="single-input">
+                        <input type="text" placeholder="Service Type" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="single-input">
+                        <textarea rows="4" placeholder="Message"></textarea>
+                      </div>
+                      <div class="button-area">
+                        <button type="button" class="theme-btn16">
+                          Submit Now
+                          <span class="arrow1"
+                            ><i class="fa-solid fa-arrow-right"></i></span
+                          ><span class="arrow2"
+                            ><i class="fa-solid fa-arrow-right"></i
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="" data-aos="fade-left" data-aos-duration="700">
+                <div class="contact9-box">
+                  <div class="icon">
+                    <img src="/assets/img/icons/contact9-icon1.svg" alt="" />
+                  </div>
+                  <div class="heading">
+                    <h5>Our Location</h5>
+                    <a href="#"
+                      >Bardok Oculi Cell<br />Western Ward B<br />Akalo Sub
+                      County<br />Kole District<br />Lango Sub Region</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="" data-aos="fade-left" data-aos-duration="900">
+                <div class="contact9-box">
+                  <div class="icon">
+                    <img src="/assets/img/icons/contact9-icon2.svg" alt="" />
+                  </div>
+                  <div class="heading">
+                    <h5>Call Or Text</h5>
+                    <a href="tel:+256772614436">+256 772 614436</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="" data-aos="fade-left" data-aos-duration="1100">
+                <div class="contact9-box">
+                  <div class="icon">
+                    <img src="/assets/img/icons/contact9-icon3.svg" alt="" />
+                  </div>
+                  <div class="heading">
+                    <h5>Email Us Today</h5>
+                    <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--=====CONTACT AREA END=======-->
@@ -802,148 +1253,174 @@
     <!--===== FOOTER AREA START =======-->
 
     <div class="footer9 _relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6 col-12">
-                        <div class="single-footer-items footer-logo-area">
-                          <div class="footer-logo">
-                            <a href="#" class="clan-name-logo-footer">
-                              <img src="assets/img/logo/rhino-head.png" alt="" class="logo-image-footer">
-                              <!-- <span class="logo-text">Okarowok<br>Wibye Acel</span> -->
-                            </a>
-                          </div>
-                            <div class="space20"></div>
-                            <div class="heading1">
-                              <p>Okarowok Wibye Acel Clan - Guardians of Lango heritage since 1887. Preserving culture, promoting unity, and building sustainable futures.</p>
-                            </div>
-                            <ul class="social-icon">
-                                <li><a href="https://www.facebook.com/Okarowokwibyeacel"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="https://x.com/OkarWibyeAcel?t=aA4AO4abE_HrKAIMyUQWiA&s=08"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="https://wa.me/+256772614436"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="single-footer-items footer-logo-area">
+              <div class="footer-logo">
+                <a href="#" class="clan-name-logo-footer">
+                  <img
+                    src="/assets/img/logo/rhino-head.png"
+                    alt=""
+                    class="logo-image-footer"
+                  />
+                  <!-- <span class="logo-text">Okarowok<br>Wibye Acel</span> -->
+                </a>
+              </div>
+              <div class="space20"></div>
+              <div class="heading1">
+                <p>
+                  Okarowok Wibye Acel Clan - Guardians of Lango heritage since
+                  1887. Preserving culture, promoting unity, and building
+                  sustainable futures.
+                </p>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="https://www.facebook.com/Okarowokwibyeacel"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/OkarWibyeAcel?t=aA4AO4abE_HrKAIMyUQWiA&s=08"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+256772614436"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="single-footer-items">
+              <h3>Useful Links</h3>
+
+              <ul class="menu-list">
+                <li><a href="/about/">About Us </a></li>
+                <li><a href="/activities/">Our Activities</a></li>
+                <li><a href="/gallery/">Our Gallery</a></li>
+                <li><a href="/blog/">Blog & News</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="single-footer-items">
+              <h3>Contact Us</h3>
+
+              <div class="contact-box">
+                <div class="icon">
+                  <img src="/assets/img/icons/footer1-icon1.png" alt="" />
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-footer-items">
-                            <h3>Useful Links</h3>
-
-                            <ul class="menu-list">
-                              <li><a href="about.html">About Us </a></li>
-                              <li><a href="service.html">Our Activities</a></li>
-                              <li><a href="gallery.html">Our Gallery</a></li>
-                              <li><a href="blog.html">Blog & News</a></li>
-                              <li><a href="index.html#contact">Contact Us</a></li>
-                        </ul>
-                        </div>
+                <div class="pera">
+                  <a href="tel:+256772614436">+256 772 614436</a>
                 </div>
+              </div>
 
+              <div class="contact-box">
+                <div class="icon">
+                  <img src="/assets/img/icons/footer1-icon2.png" alt="" />
+                </div>
+                <div class="pera">
+                  <a href="tel:+256774927372">+256 774 927372</a>
+                </div>
+              </div>
 
-                <div class="col-lg-3 col-md-6 col-12">
-                  <div class="single-footer-items">
-                      <h3>Contact Us</h3>
-
+              <div class="contact-box">
+                <div class="icon">
+                  <img src="/assets/img/icons/footer1-icon3.png" alt="" />
+                </div>
+                <div class="pera">
+                  <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
+                </div>
+              </div>
+              <!-- 
                       <div class="contact-box">
                         <div class="icon">
-                          <img src="assets/img/icons/footer1-icon1.png" alt="">
-                        </div>
-                        <div class="pera">
-                          <a href="tel:+256772614436">+256 772 614436</a>
-                        </div>
-                      </div>
-
-                      <div class="contact-box">
-                        <div class="icon">
-                          <img src="assets/img/icons/footer1-icon2.png" alt="">
-                        </div>
-                        <div class="pera">
-                          <a href="tel:+256774927372">+256 774 927372</a>
-                        </div>
-                      </div>
-
-                      <div class="contact-box">
-                        <div class="icon">
-                          <img src="assets/img/icons/footer1-icon3.png" alt="">
-                        </div>
-                        <div class="pera">
-                          <a href="mailto:info@okarowok.ac.ug">info@okarowok.ac.ug</a>
-                        </div>
-                      </div>
-<!-- 
-                      <div class="contact-box">
-                        <div class="icon">
-                          <img src="assets/img/icons/footer1-icon4.png" alt="">
+                          <img src="/assets/img/icons/footer1-icon4.png" alt="">
                         </div>
                         <div class="pera">
                           <a href="mailto:admin@techxen.org">www.techxen.org</a>
                         </div>
                       </div> -->
-
-                  </div>
             </div>
-
-            </div>
-
-            <div class="space40"></div>
+          </div>
         </div>
 
-        <div class="copyright-area">
+        <div class="space40"></div>
+      </div>
+
+      <div class="copyright-area">
         <div class="container">
-            <div class="row align-items-center">
+          <div class="row align-items-center">
             <div class="col-md-12 text-center">
-                    <div class="coppyright">
-                    <p>Copyright @2025 Okarowok Wibye Acel Clan. All Rights Reserved</p>
-                    </div>
+              <div class="coppyright">
+                <p>
+                  Copyright @<span class="year"></span> Okarowok Wibye Acel
+                  Clan. All Rights Reserved
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-    </div>
-
+      </div>
     </div>
 
     <!--===== FOOTER AREA END =======-->
 
-  <!--===== SCRIPTS =======-->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/fontawesome.js"></script>
-  <script src="assets/js/jquery.countup.js"></script>
-  <script src="assets/js/mobile-menu.js"></script>
-  <script src="assets/js/jquery.magnific-popup.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/slick-slider.js"></script>
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/Splitetext.js"></script>
-  <script src="assets/js/text-animation.js"></script>
-  <script src="assets/js/swiper-bundle.js"></script>
-  <script src="assets/js/SmoothScroll.js"></script>
-  <script src="assets/js/jquery.lineProgressbar.js"></script>
-  <script src="assets/js/ripple-btn.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Check for hash in URL after preloader finishes
-      const handleHashScroll = function() {
-        if (window.location.hash) {
-          const target = document.querySelector(window.location.hash);
-          if (target) {
-            setTimeout(() => {
-              target.scrollIntoView({ behavior: 'smooth' });
-            }, 100); // Short delay after preloader
+    <!--===== SCRIPTS =======-->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/fontawesome.js"></script>
+    <script src="/assets/js/jquery.countup.js"></script>
+    <script src="/assets/js/mobile-menu.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/slick-slider.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/Splitetext.js"></script>
+    <script src="/assets/js/text-animation.js"></script>
+    <script src="/assets/js/swiper-bundle.js"></script>
+    <script src="/assets/js/SmoothScroll.js"></script>
+    <script src="/assets/js/jquery.lineProgressbar.js"></script>
+    <script src="/assets/js/ripple-btn.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check for hash in URL after preloader finishes
+        const handleHashScroll = function () {
+          if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth" });
+              }, 100); // Short delay after preloader
+            }
           }
-        }
-      };
-    
-      // Run when preloader completes
-      document.getElementById('preloader').addEventListener('transitionend', handleHashScroll);
-      
-      // Fallback if transition doesn't fire
-      setTimeout(handleHashScroll, 2000); 
-    });
+        };
+
+        // Run when preloader completes
+        document
+          .getElementById("preloader")
+          .addEventListener("transitionend", handleHashScroll);
+
+        // Fallback if transition doesn't fire
+        setTimeout(handleHashScroll, 2000);
+      });
     </script>
     <script>
       window.addEventListener("scroll", () => {
@@ -951,5 +1428,5 @@
         header.classList.toggle("sticky", window.scrollY > 50);
       });
     </script>
-</body>
+  </body>
 </html>

@@ -6,7 +6,7 @@
                 <div class="col-lg-5 col-md-6 col-12">
                         <div class="single-footer-items footer-logo-area">
                           <div class="footer-logo">
-                            <a href="#" class="clan-name-logo-footer">
+                            <a href="/" class="clan-name-logo-footer">
                               <img src="/assets/img/logo/rhino-head.png" alt="" class="logo-image-footer">
                               <!-- <span class="logo-text">Okarowok<br>Wibye Acel</span> -->
                             </a>
@@ -30,11 +30,11 @@
                             <h3>Useful Links</h3>
 
                             <ul class="menu-list">
-                              <li><a href="about.html">About Us </a></li>
-                              <li><a href="service.html">Our Activities</a></li>
-                              <li><a href="gallery.html">Our Gallery</a></li>
+                              <li><a href="/about/">About Us </a></li>
+                              <li><a href="/activities/">Our Activities</a></li>
+                              <li><a href="gallery/">Our Gallery</a></li>
                               <li><a href="/blog/">Blog & News</a></li>
-                              <li><a href="index.html#contact">Contact Us</a></li>
+                              <li><a href="/#contact/">Contact Us</a></li>
                         </ul>
                         </div>
                 </div>

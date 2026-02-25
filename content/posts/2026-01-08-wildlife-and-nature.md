@@ -8,7 +8,6 @@ excerpt: Understanding our sacred animal's cultural significance and ecological 
 tags: wildlife, nature, conservation
 published: true
 ---
-
 ## The Duiker in Lango Cosmology
 
 The red duiker (_Cephalophus natalensis_), known in Lango as _lyec me got_ or simply by its totem name within the Okarowok clan, occupies a unique place in the clan's spiritual and cultural life. As the clan's primary totem animal, the duiker is not merely a creature of the bush — it is a living symbol of the clan's identity, a messenger between the human and ancestral worlds, and a reminder of the covenant between the Okarowok people and the natural environment they inhabit. To harm a duiker is, for an Okarowok member, a serious transgression with spiritual consequences.
