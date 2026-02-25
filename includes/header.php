@@ -125,23 +125,7 @@ if (!isset($extraStyles)) $extraStyles = '';
       font-weight: 600;
       text-decoration: none;
     }
-/* 
-    .theme-btn1 {
-      background: #c49b63;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-    }
 
-    .theme-btn1:hover {
-      background: #a8824d;
-      color: white;
-    } */
 
     /* Mobile Header */
     .mobile-header {
