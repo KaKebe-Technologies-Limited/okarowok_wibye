@@ -1,2 +1,3 @@
-Order Deny,Allow
-Deny from all
+# Admin directory - basic security
+# Allow PHP scripts to run, but restrict some access if needed
+# Currently allows all access for admin panel functionality

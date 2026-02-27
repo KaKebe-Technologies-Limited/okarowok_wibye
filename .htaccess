@@ -61,3 +61,7 @@ RewriteRule ^cache/ - [F,L]
 
 # Prevent direct access to includes directory (except from PHP)
 RewriteRule ^includes/ - [F,L]
+
+# --- Fallback 404 Handler ---
+# If no rewrite rule matches, serve 404.php
+ErrorDocument 404 /404.php
